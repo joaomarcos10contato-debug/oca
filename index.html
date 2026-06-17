@@ -87,7 +87,8 @@
 
         .navbar:not(.scrolled) .navbar__links a { color: rgba(255,255,255,0.88); }
         .navbar.scrolled .navbar__links a { color: var(--brown); }
-        .navbar__links a:hover { color: var(--rose) !important; }
+        .navbar:not(.scrolled) .navbar__links a:hover { color: var(--green) !important; }
+        .navbar.scrolled .navbar__links a:hover { color: var(--brown-dark) !important; }
 
         /* BUTTONS */
         .btn {
@@ -187,7 +188,7 @@
         /* HERO */
         #home {
             min-height: 100vh;
-            background: #604747 url("identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.47.jpeg") center/cover no-repeat;
+            background: #604747 url("identidade/fotos/karine.png") center top/cover no-repeat;
             display: flex;
             align-items: center;
             position: relative;
@@ -205,10 +206,15 @@
         #home::after {
             content: '';
             position: absolute;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='80' viewBox='0 0 90 80'%3E%3Cg fill='none' stroke='white' stroke-width='1' opacity='0.07'%3E%3Cellipse cx='45' cy='35' rx='14' ry='18'/%3E%3Cellipse cx='25' cy='44' rx='11' ry='15' transform='rotate(-28 25 44)'/%3E%3Cellipse cx='65' cy='44' rx='11' ry='15' transform='rotate(28 65 44)'/%3E%3Cellipse cx='45' cy='58' rx='9' ry='11'/%3E%3Ccircle cx='45' cy='63' r='3.5'/%3E%3C/g%3E%3C/svg%3E");
-            background-size: 90px 80px;
+            bottom: -3rem;
+            right: -4rem;
+            width: 520px;
+            height: 520px;
+            background: url("identidade/lotus.png") center/contain no-repeat;
+            filter: brightness(10);
+            opacity: 0.07;
             z-index: 1;
+            pointer-events: none;
         }
 
         .hero__inner {
@@ -383,7 +389,7 @@
             font-weight: 700;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: var(--rose);
+            color: var(--green-mid);
             margin-bottom: 0.75rem;
         }
 
@@ -427,7 +433,7 @@
             font-weight: 600;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: var(--rose);
+            color: var(--green-mid);
             margin-bottom: 1.25rem;
         }
 
@@ -492,7 +498,7 @@
         }
 
         .pillar:hover {
-            border-left-color: var(--rose);
+            border-left-color: var(--brown);
             box-shadow: var(--shadow);
             transform: translateX(6px);
         }
@@ -502,7 +508,7 @@
             font-weight: 700;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: var(--rose);
+            color: var(--green-mid);
             margin-bottom: 0.3rem;
         }
 
@@ -544,7 +550,7 @@
         .karine-name {
             position: relative;
             display: inline-block;
-            color: var(--rose);
+            color: var(--brown-dark);
             white-space: nowrap;
         }
         .karine-name__underline {
@@ -553,7 +559,7 @@
             left: 0;
             width: 100%;
             height: 16px;
-            color: var(--rose);
+            color: var(--green-mid);
             overflow: visible;
             pointer-events: none;
         }
@@ -1248,6 +1254,204 @@
             margin: 0 auto 1.75rem;
         }
 
+        /* REDE DE MULHERES — teaser */
+        #parceiras { background: var(--white); }
+
+        .rede-hero {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 3rem;
+            background: linear-gradient(145deg, #7a3a45 0%, var(--rose) 45%, #b06060 80%, #8a5a3a 100%);
+            border-radius: 28px;
+            padding: 3.5rem 4rem;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rede-hero::before {
+            content: '';
+            position: absolute;
+            top: -4rem;
+            left: -4rem;
+            width: 400px;
+            height: 400px;
+            background: url("identidade/lotus.png") center/contain no-repeat;
+            filter: brightness(10);
+            opacity: 0.06;
+            pointer-events: none;
+        }
+
+        .rede-hero__deco {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .rede-hero__deco img {
+            width: 190px;
+            height: 190px;
+            object-fit: contain;
+            filter: brightness(10);
+            opacity: 0.28;
+        }
+
+        .rede-hero__content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .rede-hero .section__eyebrow {
+            color: rgba(255,255,255,0.78);
+        }
+
+        .rede-hero h2 {
+            font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1rem;
+            line-height: 1.25;
+        }
+
+        .rede-hero > .rede-hero__content > p,
+        .rede-hero__content p {
+            font-size: 0.93rem;
+            color: rgba(255,255,255,0.80);
+            line-height: 1.75;
+            margin-bottom: 1.75rem;
+            max-width: 520px;
+        }
+
+        .rede-hero__thumbs {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .rede-hero__thumb {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            border: 2.5px solid rgba(255,255,255,0.55);
+            overflow: hidden;
+            margin-left: -10px;
+            background: rgba(255,255,255,0.15);
+            flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+
+        .rede-hero__thumb:first-child { margin-left: 0; }
+        .rede-hero__thumb:hover { transform: scale(1.12); z-index: 2; }
+
+        .rede-hero__thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .rede-hero__thumb--more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.18);
+        }
+
+        .rede-hero__thumb--more span {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .rede-hero__actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn--white-rose {
+            background: var(--white);
+            color: var(--rose);
+        }
+        .btn--white-rose:hover {
+            background: rgba(255,255,255,0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn--outline-white-rose {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        .btn--outline-white-rose:hover {
+            background: rgba(255,255,255,0.12);
+            border-color: var(--white);
+        }
+
+        /* MODAL REDE DE MULHERES */
+        .parceiras-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9500;
+            background: rgba(20,12,12,0.92);
+            overflow-y: auto;
+            padding: 2rem 1rem;
+        }
+
+        .parceiras-modal.open { display: block; }
+
+        .parceiras-modal__inner {
+            background: var(--light-bg);
+            border-radius: 24px;
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .parceiras-modal__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(145deg, #7a3a45 0%, var(--rose) 60%, #b06060 100%);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .parceiras-modal__eyebrow {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 0.2rem;
+        }
+
+        .parceiras-modal__header h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--white);
+            margin: 0;
+        }
+
+        .parceiras-modal__body {
+            padding: 2rem;
+        }
+
+        .parceiras-modal__body .partner-grid {
+            margin-bottom: 2rem;
+        }
+
+        .parceiras-modal__body .become-partner {
+            border-radius: 16px;
+        }
+
         /* PARTNER MODAL */
         .partner-modal {
             display: none;
@@ -1379,7 +1583,7 @@
             font-weight: 700;
             letter-spacing: 0.14em;
             text-transform: uppercase;
-            color: var(--rose);
+            color: var(--green-mid);
             margin-bottom: 1rem;
         }
 
@@ -1426,7 +1630,7 @@
         .contato__detail svg {
             width: 16px;
             height: 16px;
-            stroke: var(--rose);
+            stroke: var(--green-mid);
             fill: none;
             flex-shrink: 0;
         }
@@ -1556,8 +1760,23 @@
 
         /* FOOTER */
         footer {
-            background: var(--brown-dark);
+            background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown) 40%, #3d5a3d 75%, #2a4224 100%);
             padding: 3.5rem 3rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::after {
+            content: '';
+            position: absolute;
+            bottom: -2rem;
+            right: -2rem;
+            width: 280px;
+            height: 280px;
+            background: url("identidade/lotus.png") center/contain no-repeat;
+            filter: brightness(10);
+            opacity: 0.05;
+            pointer-events: none;
         }
 
         .footer__inner {
@@ -1843,6 +2062,12 @@
             .partner-card__photo { height: 180px; }
             .partner-modal__body { padding: 1.25rem 1.5rem 1.75rem; }
 
+            /* Rede de mulheres */
+            .rede-hero { grid-template-columns: 1fr; padding: 2.5rem 1.75rem; gap: 0; }
+            .rede-hero__deco { display: none; }
+            .parceiras-modal__body { padding: 1rem; }
+            .parceiras-modal__body .partner-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+
             /* Footer */
             .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
             .footer__brand p { max-width: 100%; }
@@ -1890,6 +2115,8 @@
 
             /* Parceiras */
             .become-partner { padding: 2rem 1.25rem; border-radius: 16px; }
+            .rede-hero { padding: 2rem 1.25rem; }
+            .parceiras-modal__body .partner-grid { grid-template-columns: 1fr; }
 
             /* Contato */
             .contato__title { font-size: 1.8rem; }
@@ -2412,129 +2639,142 @@
         </div>
     </div>
 
-    <!-- PARCEIRAS -->
+    <!-- PARCEIRAS / REDE DE MULHERES -->
     <section id="parceiras" aria-labelledby="parceiras-titulo">
         <div class="container">
-            <div class="parceiras__intro reveal">
-                <span class="section__eyebrow">Rede de mulheres</span>
-                <h2 id="parceiras-titulo">Empreendedoras que fazem a diferença.</h2>
-                <p>A OCA conecta contratantes a uma rede curada de mulheres empreendedoras no setor de eventos. Contratar pela OCA é investir na autonomia e na geração de renda de quem faz com paixão e propósito.</p>
-            </div>
-
-            <div class="partner-grid">
-                <!-- Folia -->
-                <div class="partner-card reveal">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/Folia.png" alt="Folia - Decoração">
-                        <span class="partner-card__cat">Decoração</span>
+            <div class="rede-hero reveal">
+                <div class="rede-hero__deco" aria-hidden="true">
+                    <img src="identidade/lotus.png" alt="">
+                </div>
+                <div class="rede-hero__content">
+                    <span class="section__eyebrow">Rede de Mulheres</span>
+                    <h2 id="parceiras-titulo">Empreendedoras que fazem a diferença.</h2>
+                    <p>A OCA conecta contratantes a uma rede curada de mulheres empreendedoras no setor de eventos. Contratar pela OCA é investir na autonomia e na geração de renda de quem faz com paixão e propósito.</p>
+                    <div class="rede-hero__thumbs">
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/Folia.png" alt="Folia"></div>
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/Abarca Catering.jpeg" alt="Abarca Catering"></div>
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/viva! fotografias.png" alt="Viva! Fotografias"></div>
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/casa fazer.jpg" alt="Casa Fazer"></div>
+                        <div class="rede-hero__thumb rede-hero__thumb--more"><span>+4</span></div>
                     </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Folia</h3>
-                        <p class="partner-card__desc">Festejar sem excessos, com bastante significado, afeto e cuidado nos detalhes. Uma celebração íntima, intencional e profunda.</p>
-                        <button class="partner-card__btn" onclick="openPartner('folia')">Ver parceira</button>
+                    <div class="rede-hero__actions">
+                        <button onclick="openParceiras()" class="btn btn--white-rose">Ver toda a rede</button>
+                        <a href="https://wa.me/5531998543261?text=Ol%C3%A1%20Karine!%20Tenho%20interesse%20em%20me%20tornar%20parceira%20da%20OCA%20Eventos%20Sustent%C3%A1veis." target="_blank" rel="noopener noreferrer" class="btn btn--outline-white-rose">Quero ser parceira</a>
                     </div>
                 </div>
-
-                <!-- Croc Coralina -->
-                <div class="partner-card reveal reveal-d1">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/croc coralina.jpg" alt="Croc Coralina - Artesanato para eventos">
-                        <span class="partner-card__cat">Artesanato</span>
-                    </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Croc Coralina</h3>
-                        <p class="partner-card__desc">Criando memórias com amigurumis. Bichinhos fofos, nomes lindos e personalizações. Mais de 1000 sonhos entregues.</p>
-                        <button class="partner-card__btn" onclick="openPartner('croc')">Ver parceira</button>
-                    </div>
-                </div>
-
-                <!-- Viva! Fotografias -->
-                <div class="partner-card reveal reveal-d2">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/viva! fotografias.png" alt="Viva! Fotografias - Fotografia e Videomakers">
-                        <span class="partner-card__cat">Fotografia e Videomakers</span>
-                    </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Viva! Fotografias</h3>
-                        <p class="partner-card__desc">Fotojornalismo sensível, com um olhar único para momentos espontâneos e artísticos em eventos.</p>
-                        <button class="partner-card__btn" onclick="openPartner('viva')">Ver parceira</button>
-                    </div>
-                </div>
-
-                <!-- Abarca Catering -->
-                <div class="partner-card reveal">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/Abarca Catering.jpeg" alt="Abarca Catering - Confeitaria inclusiva" style="object-position: center 15%;">
-                        <span class="partner-card__cat">Gastronomia</span>
-                    </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Abarca Catering</h3>
-                        <p class="partner-card__desc">Confeitaria para toda a família: segura, saudável e de lamber os dedos! Vegana, baby friendly. Vencedora do Prêmio Mulher de Negócios Sebrae MG 2023.</p>
-                        <button class="partner-card__btn" onclick="openPartner('abarca')">Ver parceira</button>
-                    </div>
-                </div>
-
-                <!-- Da Horta à Flor -->
-                <div class="partner-card reveal reveal-d1">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/da horta a flor.jpg" alt="Da Horta à Flor - Culinária inclusiva">
-                        <span class="partner-card__cat">Gastronomia</span>
-                    </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Da Horta à Flor</h3>
-                        <p class="partner-card__desc">Culinária que faz poesia com tudo que vem da terra, na confeitaria e além, acessível a veganos e intolerantes à lactose.</p>
-                        <button class="partner-card__btn" onclick="openPartner('horta')">Ver parceira</button>
-                    </div>
-                </div>
-
-                <!-- Na Tora Art -->
-                <div class="partner-card reveal reveal-d2">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/na tora art.jpg" alt="Na Tora Art - Artesanato para eventos">
-                        <span class="partner-card__cat">Artesanato</span>
-                    </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Na Tora Art</h3>
-                        <p class="partner-card__desc">Peças artesanais em madeira sustentável que combinam funcionalidade e design, tornando cada refeição e evento mais especiais.</p>
-                        <button class="partner-card__btn" onclick="openPartner('natora')">Ver parceira</button>
-                    </div>
-                </div>
-
-                <!-- Casa Fazer -->
-                <div class="partner-card reveal">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/casa fazer.jpg" alt="Casa Fazer - Gastronomia" style="object-position: center top;">
-                        <span class="partner-card__cat">Gastronomia</span>
-                    </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Casa Fazer</h3>
-                        <p class="partner-card__desc">Estações de sabor com foco em saúde e sustentabilidade: cardápios assinados por nutricionista que encantam convidados de todas as idades.</p>
-                        <button class="partner-card__btn" onclick="openPartner('casafazer')">Ver parceira</button>
-                    </div>
-                </div>
-
-                <!-- Par Bem Estar -->
-                <div class="partner-card reveal reveal-d1">
-                    <div class="partner-card__photo">
-                        <img src="identidade/fotos/Par Bem Estar.jpeg" alt="Par Bem Estar - Terapeuta Holística">
-                        <span class="partner-card__cat">Terapeuta Holística</span>
-                    </div>
-                    <div class="partner-card__body">
-                        <h3 class="partner-card__name">Par Bem Estar</h3>
-                        <p class="partner-card__desc">Terapia integrativa para bem-estar físico, emocional e energético, com serviços disponíveis em eventos para uma experiência única de leveza.</p>
-                        <button class="partner-card__btn" onclick="openPartner('parbem')">Ver parceira</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Tornar-se Parceira -->
-            <div class="become-partner reveal">
-                <h3>Venha se tornar parceira</h3>
-                <p>Faça parte da nossa rede de mulheres empreendedoras e amplie seu alcance no mercado de eventos sustentáveis.</p>
-                <a href="https://wa.me/5531998543261?text=Ol%C3%A1%20Karine!%20Tenho%20interesse%20em%20me%20tornar%20parceira%20da%20OCA%20Eventos%20Sustent%C3%A1veis." target="_blank" rel="noopener noreferrer" class="btn btn--green">Quero ser parceira</a>
             </div>
         </div>
     </section>
+
+    <!-- MODAL REDE DE MULHERES -->
+    <div class="parceiras-modal" id="parceirasModal" role="dialog" aria-label="Rede de Mulheres OCA" aria-modal="true" onclick="if(event.target===this)closeParceiras()">
+        <div class="parceiras-modal__inner">
+            <div class="parceiras-modal__header">
+                <div>
+                    <p class="parceiras-modal__eyebrow">Rede de Mulheres</p>
+                    <h3>Empreendedoras da OCA</h3>
+                </div>
+                <button class="galeria-modal__close" onclick="closeParceiras()" aria-label="Fechar">&#x2715;</button>
+            </div>
+            <div class="parceiras-modal__body">
+                <div class="partner-grid">
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/Folia.png" alt="Folia - Decoração">
+                            <span class="partner-card__cat">Decoração</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Folia</h3>
+                            <p class="partner-card__desc">Festejar sem excessos, com bastante significado, afeto e cuidado nos detalhes. Uma celebração íntima, intencional e profunda.</p>
+                            <button class="partner-card__btn" onclick="openPartner('folia')">Ver parceira</button>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/croc coralina.jpg" alt="Croc Coralina - Artesanato para eventos">
+                            <span class="partner-card__cat">Artesanato</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Croc Coralina</h3>
+                            <p class="partner-card__desc">Criando memórias com amigurumis. Bichinhos fofos, nomes lindos e personalizações. Mais de 1000 sonhos entregues.</p>
+                            <button class="partner-card__btn" onclick="openPartner('croc')">Ver parceira</button>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/viva! fotografias.png" alt="Viva! Fotografias - Fotografia e Videomakers">
+                            <span class="partner-card__cat">Fotografia e Videomakers</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Viva! Fotografias</h3>
+                            <p class="partner-card__desc">Fotojornalismo sensível, com um olhar único para momentos espontâneos e artísticos em eventos.</p>
+                            <button class="partner-card__btn" onclick="openPartner('viva')">Ver parceira</button>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/Abarca Catering.jpeg" alt="Abarca Catering - Confeitaria inclusiva" style="object-position: center 15%;">
+                            <span class="partner-card__cat">Gastronomia</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Abarca Catering</h3>
+                            <p class="partner-card__desc">Confeitaria para toda a família: segura, saudável e de lamber os dedos! Vegana, baby friendly. Vencedora do Prêmio Mulher de Negócios Sebrae MG 2023.</p>
+                            <button class="partner-card__btn" onclick="openPartner('abarca')">Ver parceira</button>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/da horta a flor.jpg" alt="Da Horta à Flor - Culinária inclusiva">
+                            <span class="partner-card__cat">Gastronomia</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Da Horta à Flor</h3>
+                            <p class="partner-card__desc">Culinária que faz poesia com tudo que vem da terra, na confeitaria e além, acessível a veganos e intolerantes à lactose.</p>
+                            <button class="partner-card__btn" onclick="openPartner('horta')">Ver parceira</button>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/na tora art.jpg" alt="Na Tora Art - Artesanato para eventos">
+                            <span class="partner-card__cat">Artesanato</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Na Tora Art</h3>
+                            <p class="partner-card__desc">Peças artesanais em madeira sustentável que combinam funcionalidade e design, tornando cada refeição e evento mais especiais.</p>
+                            <button class="partner-card__btn" onclick="openPartner('natora')">Ver parceira</button>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/casa fazer.jpg" alt="Casa Fazer - Gastronomia" style="object-position: center top;">
+                            <span class="partner-card__cat">Gastronomia</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Casa Fazer</h3>
+                            <p class="partner-card__desc">Estações de sabor com foco em saúde e sustentabilidade: cardápios assinados por nutricionista que encantam convidados de todas as idades.</p>
+                            <button class="partner-card__btn" onclick="openPartner('casafazer')">Ver parceira</button>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-card__photo">
+                            <img src="identidade/fotos/Par Bem Estar.jpeg" alt="Par Bem Estar - Terapeuta Holística">
+                            <span class="partner-card__cat">Terapeuta Holística</span>
+                        </div>
+                        <div class="partner-card__body">
+                            <h3 class="partner-card__name">Par Bem Estar</h3>
+                            <p class="partner-card__desc">Terapia integrativa para bem-estar físico, emocional e energético, com serviços disponíveis em eventos para uma experiência única de leveza.</p>
+                            <button class="partner-card__btn" onclick="openPartner('parbem')">Ver parceira</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="become-partner">
+                    <h3>Venha se tornar parceira</h3>
+                    <p>Faça parte da nossa rede de mulheres empreendedoras e amplie seu alcance no mercado de eventos sustentáveis.</p>
+                    <a href="https://wa.me/5531998543261?text=Ol%C3%A1%20Karine!%20Tenho%20interesse%20em%20me%20tornar%20parceira%20da%20OCA%20Eventos%20Sustent%C3%A1veis." target="_blank" rel="noopener noreferrer" class="btn btn--green">Quero ser parceira</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- MODAIS DAS PARCEIRAS -->
     <div id="modal-folia" class="partner-modal" role="dialog" aria-modal="true" aria-label="Folia" onclick="if(event.target===this)closePartner('folia')">
@@ -2807,9 +3047,20 @@
             document.body.style.overflow = '';
         }
 
+        function openParceiras() {
+            document.getElementById('parceirasModal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeParceiras() {
+            document.getElementById('parceirasModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeGaleria();
+                closeParceiras();
                 document.querySelectorAll('.partner-modal.open').forEach(m => {
                     m.classList.remove('open');
                 });
