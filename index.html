@@ -2097,6 +2097,15 @@
 
             /* Seções gerais */
             section { padding: 4rem 1.25rem; }
+
+            /* Espaçamento de cabeçalhos */
+            .section__header { margin-bottom: 2.5rem; }
+
+            /* Hero — texto paragráfo sem max-width restritivo */
+            .hero__text > p { max-width: 100%; }
+
+            /* Word-cycle — previne overflow horizontal em palavras longas */
+            .word-cycle { max-width: min(100%, calc(100vw - 2.5rem)); }
         }
 
         /* — CONTATO FORM (≤ 640px) — */
@@ -2140,8 +2149,18 @@
             .rede-hero { padding: 2rem 1.25rem; }
             .parceiras-modal__body .partner-grid { grid-template-columns: 1fr; }
 
+            /* Rede hero — botões empilhados e largura total */
+            .rede-hero__actions { flex-direction: column; gap: 0.75rem; }
+            .rede-hero__actions .btn { width: 100%; justify-content: center; text-align: center; }
+
             /* Contato */
             .contato__title { font-size: 1.8rem; }
+
+            /* Menu mobile — padding lateral menor */
+            .navbar__mobile { padding: 1.25rem 1.5rem 1.75rem; }
+
+            /* Espaçamento seção header */
+            .section__header { margin-bottom: 2rem; }
 
             /* Seções */
             section { padding: 3.5rem 1.25rem; }
@@ -2185,6 +2204,15 @@
             /* Nome Karine — previne overflow em telas muito pequenas */
             .karine-name { white-space: normal; }
             .karine-name__underline { display: none; }
+
+            /* Hero h1 — fonte menor em telas de 320px para caber word-cycle */
+            .hero__text h1 { font-size: 1.85rem; }
+
+            /* Mosaico mais compacto */
+            .sobre__mosaic { height: 175px; }
+
+            /* Espaçamento de cabeçalho ainda menor */
+            .section__header { margin-bottom: 1.75rem; }
 
             /* Seções */
             section { padding: 3rem 1rem; }
