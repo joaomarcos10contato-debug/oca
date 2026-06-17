@@ -63,12 +63,22 @@
             padding: 0.75rem 3rem;
         }
 
+        .navbar__logo {
+            overflow: hidden;
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+        }
+
         .navbar__logo img {
             height: 52px;
             width: 52px;
-            border-radius: 50%;
             object-fit: contain;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            transform: scale(1.42);
+            transform-origin: center;
+            display: block;
         }
 
         .navbar__links {
@@ -1795,13 +1805,23 @@
             margin-bottom: 1.5rem;
         }
 
+        .footer__brand-logo {
+            overflow: hidden;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+            flex-shrink: 0;
+        }
+
         .footer__brand img {
             height: 64px;
             width: 64px;
-            border-radius: 50%;
             object-fit: contain;
-            margin-bottom: 1.2rem;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+            transform: scale(1.42);
+            transform-origin: center;
+            display: block;
         }
 
         .footer__brand p {
@@ -2994,7 +3014,9 @@
         <div class="footer__inner">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    <div class="footer__brand-logo">
+                        <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    </div>
                     <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
                 </div>
                 <div class="footer__col">
