@@ -1769,9 +1769,12 @@
         .galeria-modal__grid img:hover { opacity: 0.82; }
 
         /* RESPONSIVE */
+
+        /* — TABLET LARGO (≤ 1024px) — */
         @media (max-width: 1024px) {
             .cards-grid { grid-template-columns: 1fr 1fr; }
             .stats-grid { grid-template-columns: 1fr 1fr; }
+            .partner-grid { grid-template-columns: 1fr 1fr; }
             .galeria-modal__grid { columns: 4; }
             section { padding: 4.5rem 2rem; }
             .navbar { padding: 1rem 2rem; }
@@ -1779,42 +1782,162 @@
             footer { padding: 3rem 2rem 1.5rem; }
         }
 
-        @media (max-width: 768px) {
-            .navbar__links,
-            .navbar__cta { display: none; }
-            .navbar__burger { display: flex; }
-
-            .hero__inner {
-                grid-template-columns: 1fr;
-                padding: 7rem 1.5rem 4rem;
-                gap: 2.5rem;
-            }
-
-            .sobre__grid,
-            .karine__grid,
-            .diferenciais__grid { grid-template-columns: 1fr; gap: 2.5rem; }
-
-            .karine__photo-wrap::before { display: none; }
-
-            .cards-grid { grid-template-columns: 1fr; }
-            .ods-grid { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: 1fr 1fr; }
-            .partner-grid { grid-template-columns: 1fr; }
-            .galeria-preview { grid-template-columns: repeat(3, 1fr); }
-            .galeria-modal__grid { columns: 3; }
-            .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
-            section { padding: 4rem 1.5rem; }
+        /* — FLORESCER EMPILHADO (≤ 860px) — */
+        @media (max-width: 860px) {
+            .florescer-featured { grid-template-columns: 1fr; }
+            .florescer-featured__text { padding: 2.5rem 1.75rem; }
+            .florescer-featured__visual { padding: 2.5rem 1.75rem; align-items: flex-start; }
         }
 
+        /* — MOBILE (≤ 768px) — */
+        @media (max-width: 768px) {
+            /* Navbar */
+            .navbar__links, .navbar__cta { display: none; }
+            .navbar__burger {
+                display: flex;
+                width: 44px;
+                height: 44px;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+            .navbar { padding: 0.9rem 1.25rem; }
+            .navbar.scrolled { padding: 0.7rem 1.25rem; }
+
+            /* Hero */
+            .hero__inner {
+                grid-template-columns: 1fr;
+                padding: 7rem 1.25rem 3.5rem;
+                gap: 2rem;
+            }
+            .hero__card { padding: 2rem 1.5rem; }
+            .hero__stats { grid-template-columns: 1fr 1fr; gap: 1.25rem 1rem; }
+            .hero__stat strong { font-size: 1.85rem; }
+            .hero__stat span { font-size: 0.76rem; }
+
+            /* Seções em 1 coluna */
+            .sobre__grid,
+            .karine__grid,
+            .diferenciais__grid { grid-template-columns: 1fr; gap: 2rem; }
+            .karine__photo-wrap::before { display: none; }
+            .sobre__mosaic { height: 220px; }
+
+            /* Serviços */
+            .servicos__challenge { padding: 2.5rem 1.5rem; }
+            .cards-grid { grid-template-columns: 1fr; }
+
+            /* Impacto */
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+            .stat-box { padding: 1.75rem 1rem; }
+
+            /* ODS */
+            .ods-grid { grid-template-columns: 1fr; }
+
+            /* Galeria */
+            .galeria-preview { grid-template-columns: repeat(3, 1fr); }
+            .galeria-modal__grid { columns: 3; }
+
+            /* Parceiras */
+            .partner-grid { grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 2.5rem; }
+            .partner-card__photo { height: 180px; }
+            .partner-modal__body { padding: 1.25rem 1.5rem 1.75rem; }
+
+            /* Footer */
+            .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+            .footer__brand p { max-width: 100%; }
+            footer { padding: 2.5rem 1.25rem 1.5rem; }
+
+            /* Seções gerais */
+            section { padding: 4rem 1.25rem; }
+        }
+
+        /* — CONTATO FORM (≤ 640px) — */
+        @media (max-width: 640px) {
+            .contato__grid-2 { grid-template-columns: 1fr; }
+            .contato__header { padding: 3.5rem 1.25rem 2.5rem; }
+            .contato__form-wrap { padding: 2.5rem 1.25rem 3.5rem; }
+            .partner-grid { grid-template-columns: 1fr; }
+            .partner-card__photo { height: 220px; }
+        }
+
+        /* — MOBILE PEQUENO (≤ 480px) — */
         @media (max-width: 480px) {
-            .galeria-preview { grid-template-columns: repeat(2, 1fr); }
-            .galeria-modal__grid { columns: 2; }
-            .stats-grid { grid-template-columns: 1fr 1fr; }
+            /* Hero */
+            .hero__inner { padding: 6rem 1.25rem 3rem; }
+            .hero__card { padding: 1.5rem 1.25rem; }
+            .hero__tagline { font-size: 0.75rem; }
+            .hero__buttons { flex-direction: column; gap: 0.75rem; }
+            .hero__buttons .btn { width: 100%; justify-content: center; text-align: center; }
+
+            /* Serviços */
+            .servicos__challenge { padding: 2rem 1.25rem; }
+            .servicos__challenge h2 { font-size: 1.4rem; letter-spacing: 0.01em; }
+
+            /* Impacto */
+            .stat-box { padding: 1.5rem 0.75rem; }
+
+            /* ODS */
             .ods-card { flex-direction: column; }
             .ods-img-wrap { width: 100%; min-width: unset; justify-content: flex-start; padding: 4px; }
             .ods-img-wrap img { width: 100px; height: 100px; }
             .ods-badge { width: 100%; flex-direction: row; gap: 0.75rem; padding: 1rem 1.5rem; justify-content: flex-start; }
             .ods-badge__num { font-size: 2rem; }
+
+            /* Galeria */
+            .galeria-preview { grid-template-columns: repeat(2, 1fr); }
+            .galeria-modal__grid { columns: 2; }
+
+            /* Parceiras */
+            .become-partner { padding: 2rem 1.25rem; border-radius: 16px; }
+
+            /* Contato */
+            .contato__title { font-size: 1.8rem; }
+
+            /* Seções */
+            section { padding: 3.5rem 1.25rem; }
+        }
+
+        /* — MOBILE MUITO PEQUENO (≤ 375px) — */
+        @media (max-width: 375px) {
+            /* Navbar */
+            .navbar { padding: 0.85rem 1rem; }
+            .navbar.scrolled { padding: 0.65rem 1rem; }
+
+            /* Hero */
+            .hero__inner { padding: 5.5rem 1rem 2.5rem; gap: 1.75rem; }
+            .hero__stat strong { font-size: 1.6rem; }
+            .hero__stat span { font-size: 0.68rem; }
+            .hero__card { padding: 1.25rem 1rem; }
+
+            /* Serviços */
+            .servicos__challenge { padding: 1.75rem 1rem; }
+            .servicos__challenge h2 { font-size: 1.25rem; }
+
+            /* Impacto */
+            .stat-box { padding: 1.25rem 0.5rem; }
+            .stat-box__number { font-size: 2rem; }
+
+            /* Florescer */
+            .florescer-featured__text { padding: 2rem 1.25rem; }
+            .florescer-featured__visual { padding: 2rem 1.25rem; }
+
+            /* Contato */
+            .contato__header { padding: 3rem 1rem 2rem; }
+            .contato__form-wrap { padding: 2rem 1rem 3rem; }
+            .contato__title { font-size: 1.6rem; }
+
+            /* Footer */
+            footer { padding: 2rem 1rem 1.5rem; }
+
+            /* Modal */
+            .partner-modal__body { padding: 1rem 1.25rem 1.5rem; }
+
+            /* Nome Karine — previne overflow em telas muito pequenas */
+            .karine-name { white-space: normal; }
+            .karine-name__underline { display: none; }
+
+            /* Seções */
+            section { padding: 3rem 1rem; }
         }
     </style>
 </head>
