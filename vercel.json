@@ -1,0 +1,14 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/sobre", "destination": "/sobre.html" },
+    { "source": "/servicos", "destination": "/servicos.html" },
+    { "source": "/impacto", "destination": "/impacto.html" },
+    { "source": "/ods", "destination": "/ods.html" },
+    { "source": "/galeria", "destination": "/galeria.html" },
+    { "source": "/parceiras", "destination": "/parceiras.html" },
+    { "source": "/contato", "destination": "/contato.html" }
+  ]
+}

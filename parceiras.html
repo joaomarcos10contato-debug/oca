@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parceiras | OCA Eventos Sustentáveis</title>
+    <link rel="icon" type="image/svg+xml" href="identidade/favicon.svg">
+    <meta name="description" content="Conheça a rede de mulheres empreendedoras da OCA. Decoração, gastronomia, fotografia, artesanato e muito mais — com curadoria, propósito e responsabilidade socioambiental.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="parceiras">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="navbar__logo">
+            <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+        </a>
+        <ul class="navbar__links" role="list">
+            <li><a href="sobre.html" data-nav="sobre">Sobre</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="impacto.html" data-nav="impacto">Impacto</a></li>
+            <li><a href="ods.html" data-nav="ods">ODS</a></li>
+            <li><a href="galeria.html" data-nav="galeria">Galeria</a></li>
+            <li><a href="parceiras.html" data-nav="parceiras">Parceiras</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--primary navbar__cta">Fale Conosco</a>
+        <button class="navbar__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menu mobile">
+        <a href="sobre.html" data-nav="sobre" onclick="closeMobile()">Sobre</a>
+        <a href="servicos.html" data-nav="servicos" onclick="closeMobile()">Serviços</a>
+        <a href="impacto.html" data-nav="impacto" onclick="closeMobile()">Impacto</a>
+        <a href="ods.html" data-nav="ods" onclick="closeMobile()">ODS</a>
+        <a href="galeria.html" data-nav="galeria" onclick="closeMobile()">Galeria</a>
+        <a href="parceiras.html" data-nav="parceiras" onclick="closeMobile()">Parceiras</a>
+        <a href="contato.html" class="btn btn--primary" onclick="closeMobile()">Fale Conosco</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero__inner">
+            <span class="page-hero__eyebrow">Rede de Mulheres</span>
+            <h1 class="page-hero__title">Empreendedoras que<br><em>fazem a diferença.</em></h1>
+            <p class="page-hero__subtitle">A OCA conecta contratantes a uma rede curada de mulheres empreendedoras no setor de eventos. Contratar pela OCA é investir na autonomia e na geração de renda de quem faz com paixão e propósito.</p>
+        </div>
+    </div>
+
+    <!-- REDE HERO -->
+    <section style="background: var(--white); padding: 4.5rem 3rem;" aria-label="Sobre a rede de mulheres">
+        <div class="container">
+            <div class="rede-hero reveal">
+                <div class="rede-hero__deco">
+                    <img src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.44.jpeg" alt="Mulheres empreendedoras OCA">
+                </div>
+                <div class="rede-hero__content">
+                    <span class="section__eyebrow">Por que contratar pela OCA</span>
+                    <h2>Uma rede construída com curadoria e propósito.</h2>
+                    <p>Cada parceira OCA passa por um processo de curadoria técnica e de valores. Ao contratar pela nossa rede, você garante qualidade, comprometimento socioambiental e investe diretamente na economia das mulheres.</p>
+                    <div class="rede-hero__thumbs">
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/Folia.png" alt="Folia"></div>
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/Abarca Catering.jpeg" alt="Abarca Catering"></div>
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/viva! fotografias.png" alt="Viva! Fotografias"></div>
+                        <div class="rede-hero__thumb"><img src="identidade/fotos/casa fazer.jpg" alt="Casa Fazer"></div>
+                        <div class="rede-hero__thumb rede-hero__thumb--more"><span>+4</span></div>
+                    </div>
+                    <div class="rede-hero__actions">
+                        <a href="https://wa.me/5531998543261?text=Ol%C3%A1%20Karine!%20Tenho%20interesse%20em%20me%20tornar%20parceira%20da%20OCA%20Eventos%20Sustent%C3%A1veis." target="_blank" rel="noopener noreferrer" class="btn btn--white-rose">Quero ser parceira</a>
+                        <a href="contato.html" class="btn btn--outline-white-rose">Contratar a rede</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID DE PARCEIRAS -->
+    <section id="parceiras" style="background: var(--light-bg); padding: 4.5rem 3rem;" aria-labelledby="parceiras-titulo">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__eyebrow">Nossas parceiras</span>
+                <h2 class="section__title" id="parceiras-titulo">Conheça as mulheres da rede OCA</h2>
+                <p class="section__subtitle">30 empreendedoras comprometidas com qualidade, criatividade e responsabilidade socioambiental.</p>
+            </div>
+            <div class="partner-grid">
+                <div class="partner-card reveal">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/Folia.png" alt="Folia - Decoração">
+                        <span class="partner-card__cat">Decoração</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Folia</h3>
+                        <p class="partner-card__desc">Festejar sem excessos, com bastante significado, afeto e cuidado nos detalhes. Uma celebração íntima, intencional e profunda.</p>
+                        <button class="partner-card__btn" onclick="openPartner('folia')">Ver parceira</button>
+                    </div>
+                </div>
+                <div class="partner-card reveal reveal-d1">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/croc coralina.jpg" alt="Croc Coralina - Artesanato para eventos">
+                        <span class="partner-card__cat">Artesanato</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Croc Coralina</h3>
+                        <p class="partner-card__desc">Criando memórias com amigurumis. Bichinhos fofos, nomes lindos e personalizações. Mais de 1000 sonhos entregues.</p>
+                        <button class="partner-card__btn" onclick="openPartner('croc')">Ver parceira</button>
+                    </div>
+                </div>
+                <div class="partner-card reveal reveal-d2">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/viva! fotografias.png" alt="Viva! Fotografias - Fotografia e Videomakers">
+                        <span class="partner-card__cat">Fotografia e Videomakers</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Viva! Fotografias</h3>
+                        <p class="partner-card__desc">Fotojornalismo sensível, com um olhar único para momentos espontâneos e artísticos em eventos.</p>
+                        <button class="partner-card__btn" onclick="openPartner('viva')">Ver parceira</button>
+                    </div>
+                </div>
+                <div class="partner-card reveal">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/Abarca Catering.jpeg" alt="Abarca Catering - Confeitaria inclusiva" style="object-position: center 15%;">
+                        <span class="partner-card__cat">Gastronomia</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Abarca Catering</h3>
+                        <p class="partner-card__desc">Confeitaria para toda a família: segura, saudável e de lamber os dedos! Vegana, baby friendly. Vencedora do Prêmio Mulher de Negócios Sebrae MG 2023.</p>
+                        <button class="partner-card__btn" onclick="openPartner('abarca')">Ver parceira</button>
+                    </div>
+                </div>
+                <div class="partner-card reveal reveal-d1">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/da horta a flor.jpg" alt="Da Horta à Flor - Culinária inclusiva">
+                        <span class="partner-card__cat">Gastronomia</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Da Horta à Flor</h3>
+                        <p class="partner-card__desc">Culinária que faz poesia com tudo que vem da terra, na confeitaria e além, acessível a veganos e intolerantes à lactose.</p>
+                        <button class="partner-card__btn" onclick="openPartner('horta')">Ver parceira</button>
+                    </div>
+                </div>
+                <div class="partner-card reveal reveal-d2">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/na tora art.jpg" alt="Na Tora Art - Artesanato para eventos">
+                        <span class="partner-card__cat">Artesanato</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Na Tora Art</h3>
+                        <p class="partner-card__desc">Peças artesanais em madeira sustentável que combinam funcionalidade e design, tornando cada refeição e evento mais especiais.</p>
+                        <button class="partner-card__btn" onclick="openPartner('natora')">Ver parceira</button>
+                    </div>
+                </div>
+                <div class="partner-card reveal">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/casa fazer.jpg" alt="Casa Fazer - Gastronomia" style="object-position: center top;">
+                        <span class="partner-card__cat">Gastronomia</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Casa Fazer</h3>
+                        <p class="partner-card__desc">Estações de sabor com foco em saúde e sustentabilidade: cardápios assinados por nutricionista que encantam convidados de todas as idades.</p>
+                        <button class="partner-card__btn" onclick="openPartner('casafazer')">Ver parceira</button>
+                    </div>
+                </div>
+                <div class="partner-card reveal reveal-d1">
+                    <div class="partner-card__photo">
+                        <img src="identidade/fotos/Par Bem Estar.jpeg" alt="Par Bem Estar - Terapeuta Holística">
+                        <span class="partner-card__cat">Terapeuta Holística</span>
+                    </div>
+                    <div class="partner-card__body">
+                        <h3 class="partner-card__name">Par Bem Estar</h3>
+                        <p class="partner-card__desc">Terapia integrativa para bem-estar físico, emocional e energético, com serviços disponíveis em eventos para uma experiência única de leveza.</p>
+                        <button class="partner-card__btn" onclick="openPartner('parbem')">Ver parceira</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BECOME PARTNER -->
+            <div class="become-partner reveal">
+                <h3>Venha se tornar parceira</h3>
+                <p>Faça parte da nossa rede de mulheres empreendedoras e amplie seu alcance no mercado de eventos sustentáveis.</p>
+                <a href="https://wa.me/5531998543261?text=Ol%C3%A1%20Karine!%20Tenho%20interesse%20em%20me%20tornar%20parceira%20da%20OCA%20Eventos%20Sustent%C3%A1veis." target="_blank" rel="noopener noreferrer" class="btn btn--green">Quero ser parceira</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAIS DAS PARCEIRAS -->
+    <div id="modal-folia" class="partner-modal" role="dialog" aria-modal="true" aria-label="Folia" onclick="if(event.target===this)closePartner('folia')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('folia')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/Folia.png" alt="Folia">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Decoração</span>
+                <h2 class="partner-modal__name">Folia</h2>
+                <p class="partner-modal__text">Viemos celebrar a vida, reunir amigos e brindar a tudo que dá sentido à nossa caminhada. Não importa qual o motivo, nossa missão é fazer daquela data um dia inesquecível! A ideia é festejar sem excessos, com bastante significado, com afeto e cuidado nos detalhes, de forma íntima e assim mais profunda.</p>
+                <p class="partner-modal__entrepreneur">Empreendedora: Paula Braccini</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/contemfolia" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @contemfolia</a>
+                    <a href="https://wa.me/55319995588525" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-croc" class="partner-modal" role="dialog" aria-modal="true" aria-label="Croc Coralina" onclick="if(event.target===this)closePartner('croc')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('croc')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/croc coralina.jpg" alt="Croc Coralina">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Artesanato para Eventos</span>
+                <h2 class="partner-modal__name">Croc Coralina</h2>
+                <p class="partner-modal__text">Criando memórias com amigurumis. Bichinhos fofos, nomes lindos e personalizações. Mais de 1000 sonhos entregues.</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/croccoralina" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @croccoralina</a>
+                    <a href="https://wa.me/5531999717643" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-viva" class="partner-modal" role="dialog" aria-modal="true" aria-label="Viva! Fotografias" onclick="if(event.target===this)closePartner('viva')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('viva')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/viva! fotografias.png" alt="Viva! Fotografias">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Fotografia e Videomakers</span>
+                <h2 class="partner-modal__name">Viva! Fotografias</h2>
+                <p class="partner-modal__text">Verônica Martins tem 37 anos, e é daquelas pessoas que tirou a sorte grande de trabalhar com o que ama, de amar o trabalho que faz. Ecóloga por formação, hoje é fotógrafa e professora de Fotografia em sua própria empresa. Como fotógrafa, trabalha numa linha mais fotojornalística e sensível, visando fotos espontâneas e artísticas, sempre aplicando um olhar único.</p>
+                <p class="partner-modal__entrepreneur">Empreendedora: Verônica Martins</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/vivafotografias" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @vivafotografias</a>
+                    <a href="https://wa.me/5531987015121" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-abarca" class="partner-modal" role="dialog" aria-modal="true" aria-label="Abarca Catering" onclick="if(event.target===this)closePartner('abarca')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('abarca')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/Abarca Catering.jpeg" alt="Abarca Catering">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Confeitaria inclusiva</span>
+                <h2 class="partner-modal__name">Abarca Catering</h2>
+                <p class="partner-modal__text">Confeitaria para toda a família! Segura, saudável e de lamber os dedos! Vegana, baby friendly. Vencedora do Prêmio Mulher de Negócios Sebrae MG 2023.</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/abarcacatering" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @abarcacatering</a>
+                    <a href="https://wa.me/5531999381646" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-horta" class="partner-modal" role="dialog" aria-modal="true" aria-label="Da Horta à Flor" onclick="if(event.target===this)closePartner('horta')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('horta')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/da horta a flor.jpg" alt="Da Horta à Flor">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Culinária inclusiva</span>
+                <h2 class="partner-modal__name">Da Horta à Flor</h2>
+                <p class="partner-modal__text">Da Horta à Flor é um projeto culinário que faz poesia com tudo o que vem da terra, sobretudo na confeitaria, sendo inclusivo a veganos e intolerantes à lactose. É inspirado nas memórias afetivas de Hortênsia na cozinha com suas avós e sua mãe.</p>
+                <p class="partner-modal__entrepreneur">Empreendedora: Hortênsia França Ribeiro</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/dahortaaflor" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @dahortaaflor</a>
+                    <a href="https://wa.me/5531973033233" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-natora" class="partner-modal" role="dialog" aria-modal="true" aria-label="Na Tora Art" onclick="if(event.target===this)closePartner('natora')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('natora')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/na tora art.jpg" alt="Na Tora Art">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Artesanato para Eventos</span>
+                <h2 class="partner-modal__name">Na Tora Art</h2>
+                <p class="partner-modal__text">As peças da Na Tora Art, criadas por Flávia, designer de interiores, combinam funcionalidade e design em cada detalhe. Usamos madeira sustentável, proveniente de reflorestamento, manejo ou demolição, garantindo exclusividade e responsabilidade ambiental em cada peça, todas feitas à mão.</p>
+                <p class="partner-modal__entrepreneur">Empreendedora: Flávia Cristina Teixeira</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/natora.art" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @natora.art</a>
+                    <a href="https://wa.me/5531999965069" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-casafazer" class="partner-modal" role="dialog" aria-modal="true" aria-label="Casa Fazer" onclick="if(event.target===this)closePartner('casafazer')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('casafazer')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/casa fazer.jpg" alt="Casa Fazer">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Gastronomia</span>
+                <h2 class="partner-modal__name">Casa Fazer</h2>
+                <p class="partner-modal__text">A Casa Fazer traz ao mercado de eventos um novo conceito com foco na saúde e sustentabilidade. Nossas Estações de Sabor aliam requinte, praticidade, sabor e consciência alimentar a uma belíssima apresentação, com cardápios assinados pela nutricionista Mara Rolim.</p>
+                <p class="partner-modal__entrepreneur">Empreendedora: Raisa Baeta</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/casafazer" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @casafazer</a>
+                    <a href="https://wa.me/55318633230" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-parbem" class="partner-modal" role="dialog" aria-modal="true" aria-label="Par Bem Estar" onclick="if(event.target===this)closePartner('parbem')">
+        <div class="partner-modal__inner">
+            <button class="partner-modal__close" onclick="closePartner('parbem')" aria-label="Fechar">&#x2715;</button>
+            <img class="partner-modal__photo" src="identidade/fotos/Par Bem Estar.jpeg" alt="Par Bem Estar">
+            <div class="partner-modal__body">
+                <span class="partner-modal__cat">Terapeuta Holística</span>
+                <h2 class="partner-modal__name">Par Bem Estar</h2>
+                <p class="partner-modal__text">Patrícia Rabelo é terapeuta integrativa, especializada em promover bem-estar físico, emocional e energético. Com uma abordagem que conecta corpo, mente e coração, ela ajuda pessoas a liberarem emoções e desenvolverem resiliência. Patrícia também oferece seus serviços em eventos, proporcionando momentos de relaxamento e reconexão.</p>
+                <p class="partner-modal__entrepreneur">Empreendedora: Patrícia Rabelo</p>
+                <div class="partner-modal__links">
+                    <a href="https://instagram.com/parbemestar" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--ig">Instagram @parbemestar</a>
+                    <a href="https://wa.me/5531991640813" target="_blank" rel="noopener noreferrer" class="partner-modal__link partner-modal__link--wa">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    </div>
+                    <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a OCA</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                        <li><a href="ods.html">ODS</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="parceiras.html">Parceiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531998543261" target="_blank" rel="noopener">(31) 99854-3261</a></li>
+                        <li><a href="https://www.ocaeventos.com.br" target="_blank" rel="noopener">ocaeventos.com.br</a></li>
+                        <li><a href="https://instagram.com/ocaeventos" target="_blank" rel="noopener">@ocaeventos</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Cana%C3%A3%2C+855%2C+Graja%C3%BA%2C+Belo+Horizonte" target="_blank" rel="noopener">Rua Canaã, 855 · Grajaú · BH</a></li>
+                    </ul>
+                    <h4 style="margin-top:1.5rem;">Responsabilidade técnica</h4>
+                    <ul>
+                        <li><a href="#">Karine Rolim, CRBio-4</a></li>
+                        <li><a href="#">ISO 20121</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 OCA Eventos Sustentáveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a OCA | OCA Eventos Sustentáveis</title>
+    <link rel="icon" type="image/svg+xml" href="identidade/favicon.svg">
+    <meta name="description" content="Conheça a história da OCA Eventos Sustentáveis, fundada por Karine Rolim em 2015. Uma empresa de impacto que une eventos sustentáveis, gestão de resíduos e empreendedorismo feminino.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="sobre">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="navbar__logo">
+            <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+        </a>
+        <ul class="navbar__links" role="list">
+            <li><a href="sobre.html" data-nav="sobre">Sobre</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="impacto.html" data-nav="impacto">Impacto</a></li>
+            <li><a href="ods.html" data-nav="ods">ODS</a></li>
+            <li><a href="galeria.html" data-nav="galeria">Galeria</a></li>
+            <li><a href="parceiras.html" data-nav="parceiras">Parceiras</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--primary navbar__cta">Fale Conosco</a>
+        <button class="navbar__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menu mobile">
+        <a href="sobre.html" data-nav="sobre" onclick="closeMobile()">Sobre</a>
+        <a href="servicos.html" data-nav="servicos" onclick="closeMobile()">Serviços</a>
+        <a href="impacto.html" data-nav="impacto" onclick="closeMobile()">Impacto</a>
+        <a href="ods.html" data-nav="ods" onclick="closeMobile()">ODS</a>
+        <a href="galeria.html" data-nav="galeria" onclick="closeMobile()">Galeria</a>
+        <a href="parceiras.html" data-nav="parceiras" onclick="closeMobile()">Parceiras</a>
+        <a href="contato.html" class="btn btn--primary" onclick="closeMobile()">Fale Conosco</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero__inner">
+            <span class="page-hero__eyebrow">Nossa história</span>
+            <h1 class="page-hero__title">Celebrar com <em>propósito</em><br>desde 2015</h1>
+            <p class="page-hero__subtitle">Um negócio de impacto que une organização de eventos sustentáveis, gestão de resíduos, formação profissional e empreendedorismo feminino.</p>
+        </div>
+    </div>
+
+    <!-- SOBRE A OCA -->
+    <section id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container">
+            <div class="sobre__grid">
+                <div class="sobre__text reveal">
+                    <h2 id="sobre-titulo">OCA Eventos Sustentáveis</h2>
+                    <span class="desde">Belo Horizonte, desde 2015</span>
+                    <p class="tagline">Um negócio de impacto que une organização de eventos sustentáveis, gestão de resíduos, formação profissional e empreendedorismo feminino.</p>
+                    <p>A OCA surgiu de um desejo concreto: mudar a forma como os eventos acontecem. O setor gera muitos resíduos, emite CO2 em excesso e muitas vezes invisibiliza as mulheres que fazem tudo acontecer. A OCA veio para enfrentar esses desafios de frente.</p>
+                    <p>Acreditamos em um futuro onde eventos sustentáveis sejam a regra, não a exceção — com celebrações responsáveis que inspiram novos hábitos e valorizam quem faz.</p>
+                    <p>Pertencimento, conexão real, valorização de quem faz, escolhas conscientes e cuidado com o meio ambiente. São mais do que valores. São a forma como a OCA opera todos os dias.</p>
+                </div>
+                <div class="sobre__right reveal reveal-d1">
+                    <div class="sobre__mosaic">
+                        <img src="identidade/fotos/4-1-300x300.png" alt="Evento OCA">
+                        <img src="identidade/fotos/6-1-300x300.png" alt="Evento OCA">
+                        <img src="identidade/fotos/9-1-300x300.png" alt="Evento OCA">
+                        <img src="identidade/fotos/12-1-300x300.png" alt="Evento OCA">
+                    </div>
+                    <div class="pillars" aria-label="Pilares da marca">
+                        <div class="pillar">
+                            <div class="pillar__label">Pilar 01</div>
+                            <h4>Impacto</h4>
+                            <p>Transformações que permanecem além do momento vivido: experiências com contribuições positivas e duradouras para pessoas e comunidades.</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar__label">Pilar 02</div>
+                            <h4>Comunidade</h4>
+                            <p>Equilíbrio entre presente e futuro, valorizando pessoas, relações e recursos por meio de escolhas conscientes.</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar__label">Pilar 03</div>
+                            <h4>Circularidade</h4>
+                            <p>Recursos em ciclos contínuos: um modelo que valoriza o reaproveitamento e amplia o valor gerado por cada evento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KARINE -->
+    <section id="karine" aria-labelledby="karine-titulo">
+        <div class="container">
+            <div class="karine__grid">
+                <div class="karine__text reveal">
+                    <span class="section__eyebrow">Quem faz acontecer</span>
+                    <h2 id="karine-titulo">
+                        <span class="karine-name">
+                            Karine Rolim
+                            <svg class="karine-name__underline" viewBox="0 0 300 20" aria-hidden="true">
+                                <path class="karine-name__path"
+                                    d="M 0,10 Q 75,0 150,10 Q 225,20 300,10"
+                                    stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            </svg>
+                        </span>, a bióloga que reinventou a forma de celebrar.
+                    </h2>
+                    <p>Criada em Mariana, cidade histórica de Minas Gerais, Karine cresceu entre festas feitas à mão e celebrações de rua. Quando chegou a Belo Horizonte, sentiu falta exatamente disso: eventos com alma, feitos com cuidado, que respeitam as pessoas e o planeta.</p>
+                    <p>Foi dessa saudade que nasceu a OCA, em 2015. Bióloga com especialização em gestão ambiental e registro no CRBio-4, Karine uniu o rigor técnico ao afeto e criou uma empresa que organiza eventos como quem cuida de algo precioso.</p>
+                    <p>Hoje a OCA vai além dos eventos: forma mulheres empreendedoras pelo programa OCA Florescer, conecta produtoras locais com quem quer celebrar com propósito e comprova, um evento de cada vez, que sustentabilidade e beleza caminham juntas.</p>
+                    <div class="karine__badges">
+                        <span class="karine__badge">Bióloga CRBio-4</span>
+                        <span class="karine__badge">Gestão Ambiental</span>
+                        <span class="karine__badge">ISO 20121</span>
+                        <span class="karine__badge">OCA Florescer</span>
+                    </div>
+                </div>
+                <div class="karine__photo-wrap reveal reveal-d1">
+                    <img src="identidade/fotos/karine.png" alt="Karine Rolim, fundadora e responsável técnica da OCA Eventos Sustentáveis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="home-cta">
+        <div class="home-cta__inner reveal">
+            <h2>Quer conhecer nossos serviços?</h2>
+            <p>Descubra como a OCA pode transformar o seu próximo evento em uma experiência com propósito real.</p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                <a href="servicos.html" class="btn btn--green" style="font-size:0.95rem; padding:0.85rem 2rem;">Ver serviços</a>
+                <a href="contato.html" class="btn btn--outline-white" style="font-size:0.95rem; padding:0.85rem 2rem;">Fale Conosco</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    </div>
+                    <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a OCA</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                        <li><a href="ods.html">ODS</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="parceiras.html">Parceiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531998543261" target="_blank" rel="noopener">(31) 99854-3261</a></li>
+                        <li><a href="https://www.ocaeventos.com.br" target="_blank" rel="noopener">ocaeventos.com.br</a></li>
+                        <li><a href="https://instagram.com/ocaeventos" target="_blank" rel="noopener">@ocaeventos</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Cana%C3%A3%2C+855%2C+Graja%C3%BA%2C+Belo+Horizonte" target="_blank" rel="noopener">Rua Canaã, 855 · Grajaú · BH</a></li>
+                    </ul>
+                    <h4 style="margin-top:1.5rem;">Responsabilidade técnica</h4>
+                    <ul>
+                        <li><a href="#">Karine Rolim, CRBio-4</a></li>
+                        <li><a href="#">ISO 20121</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 OCA Eventos Sustentáveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

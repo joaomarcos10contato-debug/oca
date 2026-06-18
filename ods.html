@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS | OCA Eventos Sustentáveis</title>
+    <link rel="icon" type="image/svg+xml" href="identidade/favicon.svg">
+    <meta name="description" content="A OCA está comprometida com os Objetivos de Desenvolvimento Sustentável da ONU — Agenda 2030. Saiba como cada evento contribui para ODS 11, 12, 13 e 17.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="ods">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="navbar__logo">
+            <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+        </a>
+        <ul class="navbar__links" role="list">
+            <li><a href="sobre.html" data-nav="sobre">Sobre</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="impacto.html" data-nav="impacto">Impacto</a></li>
+            <li><a href="ods.html" data-nav="ods">ODS</a></li>
+            <li><a href="galeria.html" data-nav="galeria">Galeria</a></li>
+            <li><a href="parceiras.html" data-nav="parceiras">Parceiras</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--primary navbar__cta">Fale Conosco</a>
+        <button class="navbar__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menu mobile">
+        <a href="sobre.html" data-nav="sobre" onclick="closeMobile()">Sobre</a>
+        <a href="servicos.html" data-nav="servicos" onclick="closeMobile()">Serviços</a>
+        <a href="impacto.html" data-nav="impacto" onclick="closeMobile()">Impacto</a>
+        <a href="ods.html" data-nav="ods" onclick="closeMobile()">ODS</a>
+        <a href="galeria.html" data-nav="galeria" onclick="closeMobile()">Galeria</a>
+        <a href="parceiras.html" data-nav="parceiras" onclick="closeMobile()">Parceiras</a>
+        <a href="contato.html" class="btn btn--primary" onclick="closeMobile()">Fale Conosco</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero__inner">
+            <span class="page-hero__eyebrow">Agenda 2030</span>
+            <h1 class="page-hero__title">Nosso compromisso com<br><em>os ODS</em></h1>
+            <p class="page-hero__subtitle">Cada evento realizado pela OCA contribui diretamente para os Objetivos de Desenvolvimento Sustentável da ONU. Sustentabilidade não é cenário — é estrutura.</p>
+        </div>
+    </div>
+
+    <!-- INTRO ODS -->
+    <section style="background: var(--light-bg); padding: 4rem 3rem;" aria-label="Sobre os ODS">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="reveal">
+                <span class="section__eyebrow">O que são os ODS</span>
+                <h2 class="section__title">A Agenda 2030 no contexto da OCA</h2>
+                <p class="section__subtitle" style="max-width: 700px;">Os Objetivos de Desenvolvimento Sustentável são 17 metas globais estabelecidas pela ONU para serem alcançadas até 2030. A OCA integra esses objetivos no coração de cada evento — desde o planejamento até a desmontagem — garantindo que cada celebração seja também um ato de responsabilidade global.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ODS GRID -->
+    <section id="ods" aria-labelledby="ods-titulo" style="background: var(--white);">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__eyebrow">Objetivos que guiam nossa atuação</span>
+                <h2 class="section__title" id="ods-titulo">ODS que trabalhamos em cada evento</h2>
+                <p class="section__subtitle">Quatro objetivos que norteiam todas as nossas decisões de planejamento, produção e gestão de resíduos.</p>
+            </div>
+            <div class="ods-grid">
+                <div class="ods-card reveal">
+                    <div class="ods-img-wrap">
+                        <img src="identidade/fotos/ods 11.jpg" alt="ODS 11 - Cidades e Comunidades Sustentáveis">
+                    </div>
+                    <div class="ods-body">
+                        <h4>ODS 11 — Cidades e Comunidades Sustentáveis</h4>
+                        <p>Promovemos eventos que fortalecem a cultura local, a conexão entre comunidades e o uso consciente dos espaços urbanos, contribuindo para cidades mais humanas e sustentáveis.</p>
+                    </div>
+                </div>
+                <div class="ods-card reveal reveal-d1">
+                    <div class="ods-img-wrap">
+                        <img src="identidade/fotos/ods12.png" alt="ODS 12 - Consumo e Produção Responsáveis">
+                    </div>
+                    <div class="ods-body">
+                        <h4>ODS 12 — Consumo e Produção Responsáveis</h4>
+                        <p>Cada evento é planejado com curadoria de fornecedoras, gestão de resíduos e práticas que reduzem o desperdício, transformando celebrações em modelos de consumo consciente.</p>
+                    </div>
+                </div>
+                <div class="ods-card reveal reveal-d2">
+                    <div class="ods-img-wrap">
+                        <img src="identidade/fotos/ods13.jpg" alt="ODS 13 - Ação Contra a Mudança Global do Clima">
+                    </div>
+                    <div class="ods-body">
+                        <h4>ODS 13 — Ação Contra a Mudança Global do Clima</h4>
+                        <p>Implementamos estratégias de redução de emissões e ações de educação climática que envolvem público, equipe e comunidade em cada evento realizado.</p>
+                    </div>
+                </div>
+                <div class="ods-card reveal reveal-d3">
+                    <div class="ods-img-wrap">
+                        <img src="identidade/fotos/ods17.png" alt="ODS 17 - Parcerias e Meios de Implementação">
+                    </div>
+                    <div class="ods-body">
+                        <h4>ODS 17 — Parcerias e Meios de Implementação</h4>
+                        <p>Acreditamos na força da colaboração. Construímos redes entre quem faz e quem celebra, promovendo parcerias que distribuem valor por toda a cadeia produtiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="home-cta">
+        <div class="home-cta__inner reveal">
+            <h2>Seu evento pode ser parte da solução</h2>
+            <p>Ao escolher a OCA, você contribui diretamente para uma agenda global de sustentabilidade e impacto positivo.</p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                <a href="contato.html" class="btn btn--green" style="font-size:0.95rem; padding:0.85rem 2rem;">Falar com a OCA</a>
+                <a href="impacto.html" class="btn btn--outline-white" style="font-size:0.95rem; padding:0.85rem 2rem;">Ver nosso impacto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    </div>
+                    <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a OCA</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                        <li><a href="ods.html">ODS</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="parceiras.html">Parceiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531998543261" target="_blank" rel="noopener">(31) 99854-3261</a></li>
+                        <li><a href="https://www.ocaeventos.com.br" target="_blank" rel="noopener">ocaeventos.com.br</a></li>
+                        <li><a href="https://instagram.com/ocaeventos" target="_blank" rel="noopener">@ocaeventos</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Cana%C3%A3%2C+855%2C+Graja%C3%BA%2C+Belo+Horizonte" target="_blank" rel="noopener">Rua Canaã, 855 · Grajaú · BH</a></li>
+                    </ul>
+                    <h4 style="margin-top:1.5rem;">Responsabilidade técnica</h4>
+                    <ul>
+                        <li><a href="#">Karine Rolim, CRBio-4</a></li>
+                        <li><a href="#">ISO 20121</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 OCA Eventos Sustentáveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

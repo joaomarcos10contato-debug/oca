@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | OCA Eventos Sustentáveis</title>
+    <link rel="icon" type="image/svg+xml" href="identidade/favicon.svg">
+    <meta name="description" content="Entre em contato com a OCA Eventos Sustentáveis. Solicite proposta, PGRS ou tire suas dúvidas. Instagram, WhatsApp e formulário disponíveis.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contato">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="navbar__logo">
+            <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+        </a>
+        <ul class="navbar__links" role="list">
+            <li><a href="sobre.html" data-nav="sobre">Sobre</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="impacto.html" data-nav="impacto">Impacto</a></li>
+            <li><a href="ods.html" data-nav="ods">ODS</a></li>
+            <li><a href="galeria.html" data-nav="galeria">Galeria</a></li>
+            <li><a href="parceiras.html" data-nav="parceiras">Parceiras</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--primary navbar__cta">Fale Conosco</a>
+        <button class="navbar__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menu mobile">
+        <a href="sobre.html" data-nav="sobre" onclick="closeMobile()">Sobre</a>
+        <a href="servicos.html" data-nav="servicos" onclick="closeMobile()">Serviços</a>
+        <a href="impacto.html" data-nav="impacto" onclick="closeMobile()">Impacto</a>
+        <a href="ods.html" data-nav="ods" onclick="closeMobile()">ODS</a>
+        <a href="galeria.html" data-nav="galeria" onclick="closeMobile()">Galeria</a>
+        <a href="parceiras.html" data-nav="parceiras" onclick="closeMobile()">Parceiras</a>
+        <a href="contato.html" class="btn btn--primary" onclick="closeMobile()">Fale Conosco</a>
+    </nav>
+
+    <!-- CONTATO -->
+    <section id="contato" aria-labelledby="cta-titulo" style="padding-top: 70px;">
+        <!-- Cabeçalho claro -->
+        <div class="contato__header">
+            <span class="contato__label reveal">Fale Conosco</span>
+            <h1 id="cta-titulo" class="contato__title reveal">Entre em contato<br>agora mesmo</h1>
+            <p class="contato__subtitle reveal">Preencha o formulário abaixo e entraremos em contato para planejar seu próximo evento com propósito e impacto positivo.</p>
+
+            <div class="contato__details reveal">
+                <a href="https://instagram.com/ocaeventos" target="_blank" rel="noopener" class="contato__detail">
+                    <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                    @ocaeventos
+                </a>
+                <a href="https://wa.me/5531998543261" target="_blank" rel="noopener" class="contato__detail">
+                    <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg>
+                    (31) 99854-3261
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Cana%C3%A3%2C+855%2C+Graja%C3%BA%2C+Belo+Horizonte" target="_blank" rel="noopener" class="contato__detail">
+                    <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                        <circle cx="12" cy="9" r="2.5"/>
+                    </svg>
+                    Rua Canaã, 855 · Grajaú · Belo Horizonte
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulário escuro -->
+        <div class="contato__form-wrap">
+            <form class="contato__form" onsubmit="submitContato(event)" novalidate>
+                <div class="contato__grid-2">
+                    <div class="contato__field">
+                        <label for="f-nome">Nome <span class="contato__req">*</span></label>
+                        <input type="text" id="f-nome" class="contato__input" placeholder="Seu nome" required>
+                    </div>
+                    <div class="contato__field">
+                        <label for="f-empresa">Empresa</label>
+                        <input type="text" id="f-empresa" class="contato__input" placeholder="Nome da empresa (opcional)">
+                    </div>
+                </div>
+                <div class="contato__grid-2">
+                    <div class="contato__field">
+                        <label for="f-email">E-mail <span class="contato__req">*</span></label>
+                        <input type="email" id="f-email" class="contato__input" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="contato__field">
+                        <label for="f-tel">Telefone <span class="contato__req">*</span></label>
+                        <input type="tel" id="f-tel" class="contato__input" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+                <div class="contato__field">
+                    <label for="f-servico">Qual serviço está buscando? <span class="contato__req">*</span></label>
+                    <select id="f-servico" class="contato__select" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Organização de evento sustentável">Organização de evento sustentável</option>
+                        <option value="PGRS (Plano de Gerenciamento de Resíduos)">PGRS (Plano de Gerenciamento de Resíduos)</option>
+                        <option value="Curadoria de fornecedoras femininas">Curadoria de fornecedoras femininas</option>
+                        <option value="Quero ser parceira">Quero ser parceira</option>
+                        <option value="OCA Florescer (formação gratuita)">OCA Florescer (formação gratuita)</option>
+                        <option value="RICOTEC (cursos online)">RICOTEC (cursos online)</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="contato__field">
+                    <label for="f-msg">Como podemos ajudar?</label>
+                    <textarea id="f-msg" class="contato__textarea" placeholder="Descreva brevemente o que você precisa..."></textarea>
+                </div>
+                <div class="contato__privacy">
+                    <input type="checkbox" id="f-privacy" required>
+                    <label for="f-privacy">Concordo que a OCA utilize meus dados de contato para retornar com informações sobre seus serviços. Você pode solicitar a remoção a qualquer momento.</label>
+                </div>
+                <button type="submit" class="btn btn--green contato__btn">Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    </div>
+                    <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a OCA</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                        <li><a href="ods.html">ODS</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="parceiras.html">Parceiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531998543261" target="_blank" rel="noopener">(31) 99854-3261</a></li>
+                        <li><a href="https://www.ocaeventos.com.br" target="_blank" rel="noopener">ocaeventos.com.br</a></li>
+                        <li><a href="https://instagram.com/ocaeventos" target="_blank" rel="noopener">@ocaeventos</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Cana%C3%A3%2C+855%2C+Graja%C3%BA%2C+Belo+Horizonte" target="_blank" rel="noopener">Rua Canaã, 855 · Grajaú · BH</a></li>
+                    </ul>
+                    <h4 style="margin-top:1.5rem;">Responsabilidade técnica</h4>
+                    <ul>
+                        <li><a href="#">Karine Rolim, CRBio-4</a></li>
+                        <li><a href="#">ISO 20121</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 OCA Eventos Sustentáveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

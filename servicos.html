@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | OCA Eventos Sustentáveis</title>
+    <link rel="icon" type="image/svg+xml" href="identidade/favicon.svg">
+    <meta name="description" content="Conheça os serviços da OCA: organização de eventos sustentáveis, gestão de resíduos e PGRS, curadoria com propósito e o programa OCA Florescer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="servicos">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="navbar__logo">
+            <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+        </a>
+        <ul class="navbar__links" role="list">
+            <li><a href="sobre.html" data-nav="sobre">Sobre</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="impacto.html" data-nav="impacto">Impacto</a></li>
+            <li><a href="ods.html" data-nav="ods">ODS</a></li>
+            <li><a href="galeria.html" data-nav="galeria">Galeria</a></li>
+            <li><a href="parceiras.html" data-nav="parceiras">Parceiras</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--primary navbar__cta">Fale Conosco</a>
+        <button class="navbar__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menu mobile">
+        <a href="sobre.html" data-nav="sobre" onclick="closeMobile()">Sobre</a>
+        <a href="servicos.html" data-nav="servicos" onclick="closeMobile()">Serviços</a>
+        <a href="impacto.html" data-nav="impacto" onclick="closeMobile()">Impacto</a>
+        <a href="ods.html" data-nav="ods" onclick="closeMobile()">ODS</a>
+        <a href="galeria.html" data-nav="galeria" onclick="closeMobile()">Galeria</a>
+        <a href="parceiras.html" data-nav="parceiras" onclick="closeMobile()">Parceiras</a>
+        <a href="contato.html" class="btn btn--primary" onclick="closeMobile()">Fale Conosco</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero__inner">
+            <span class="page-hero__eyebrow">O que fazemos</span>
+            <h1 class="page-hero__title">Soluções completas para<br><em>eventos com propósito</em></h1>
+            <p class="page-hero__subtitle">Da curadoria de fornecedoras à gestão de resíduos — cada detalhe planejado com afeto, responsabilidade e compromisso socioambiental.</p>
+        </div>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" aria-labelledby="servicos-titulo">
+        <div class="container">
+            <div class="servicos__challenge reveal">
+                <h2 id="servicos-titulo">Qual é o desafio do seu evento hoje?</h2>
+                <p>Criar um evento memorável vai muito além da organização. É preciso pensar na experiência, nas escolhas envolvidas e na responsabilidade por tudo o que acontece antes, durante e depois.</p>
+                <p>Por isso, desenvolvemos soluções completas para eventos com propósito, unindo curadoria, criatividade, gestão de resíduos e responsabilidade socioambiental para transformar cada etapa em uma experiência mais consciente, afetiva e sustentável.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card__img-wrap">
+                        <img class="card__img" src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.47.jpeg" alt="Evento sustentável organizado pela OCA" style="object-position: center 55%;">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Organização de Eventos Sustentáveis</h3>
+                        <p>Organizamos eventos sociais, corporativos e culturais para até 100 pessoas com gestão 360°: da curadoria de fornecedoras à coordenação de produção, montagem, logística e gestão de resíduos. Cada detalhe planejado com afeto e propósito.</p>
+                        <a href="contato.html" class="btn btn--primary">Solicitar proposta</a>
+                    </div>
+                </div>
+                <div class="card reveal reveal-d1">
+                    <div class="card__img-wrap" style="background:var(--light-bg);display:flex;align-items:center;justify-content:center;">
+                        <img src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.39 (1).jpeg" alt="Gestão de resíduos em evento sustentável" style="width:88%;height:88%;object-fit:cover;object-position:center 60%;">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="1 4 1 10 7 10"/>
+                                <polyline points="23 20 23 14 17 14"/>
+                                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+                            </svg>
+                        </div>
+                        <h3>Gestão de Resíduos e PGRS</h3>
+                        <p>Elaboramos e executamos o Plano de Gerenciamento de Resíduos Sólidos para eventos de todos os portes, em conformidade com a Lei 12.305/2010. Responsabilidade técnica de Karine Rolim, bióloga registrada no CRBio-4.</p>
+                        <a href="contato.html" class="btn btn--primary">Solicitar PGRS</a>
+                    </div>
+                </div>
+                <div class="card reveal reveal-d2">
+                    <div class="card__img-wrap">
+                        <img class="card__img" src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.43.jpeg" alt="Curadoria de fornecedoras e empreendedoras">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Curadoria com Propósito</h3>
+                        <p>Selecionamos produtos e serviços com criatividade, cuidado e responsabilidade. Toda parceira OCA passa por curadoria técnica e de valores alinhada à nossa missão socioambiental. Originalidade e compromisso com o que importa.</p>
+                        <a href="parceiras.html" class="btn btn--primary">Conhecer parceiras</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OCA Florescer -->
+            <div class="florescer-featured reveal">
+                <div class="florescer-featured__text">
+                    <span class="florescer-featured__eyebrow">Programa Social</span>
+                    <h3 class="florescer-featured__title">OCA Florescer</h3>
+                    <p class="florescer-featured__desc">Capacitamos mulheres para atuarem na cadeia produtiva de eventos, promovendo autonomia econômica, responsabilidade socioambiental e transformação social.</p>
+                    <p class="florescer-featured__desc">O programa é viabilizado por editais e parcerias com empresas comprometidas com transformação social.</p>
+                    <span class="florescer-featured__badge">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        100% gratuito para as participantes
+                    </span>
+                    <a href="contato.html" class="btn btn--green" style="align-self: flex-start;">Quero participar</a>
+                </div>
+                <div class="florescer-featured__visual">
+                    <p class="florescer-featured__quote">"Porque o futuro dos eventos<br>deve ser construído<br>por mulheres."</p>
+                    <ul class="florescer-list">
+                        <li class="florescer-list__item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Formação técnica em eventos sustentáveis
+                        </li>
+                        <li class="florescer-list__item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Empreendedorismo e autonomia econômica
+                        </li>
+                        <li class="florescer-list__item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Responsabilidade socioambiental na prática
+                        </li>
+                        <li class="florescer-list__item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Conexão com a rede de parceiras OCA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="home-cta">
+        <div class="home-cta__inner reveal">
+            <h2>Pronta para celebrar com propósito?</h2>
+            <p>Fale com a Karine e descubra como a OCA pode transformar seu próximo evento em uma experiência real e consciente.</p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                <a href="contato.html" class="btn btn--green" style="font-size:0.95rem; padding:0.85rem 2rem;">Solicitar proposta</a>
+                <a href="impacto.html" class="btn btn--outline-white" style="font-size:0.95rem; padding:0.85rem 2rem;">Ver nosso impacto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    </div>
+                    <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a OCA</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                        <li><a href="ods.html">ODS</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="parceiras.html">Parceiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531998543261" target="_blank" rel="noopener">(31) 99854-3261</a></li>
+                        <li><a href="https://www.ocaeventos.com.br" target="_blank" rel="noopener">ocaeventos.com.br</a></li>
+                        <li><a href="https://instagram.com/ocaeventos" target="_blank" rel="noopener">@ocaeventos</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Cana%C3%A3%2C+855%2C+Graja%C3%BA%2C+Belo+Horizonte" target="_blank" rel="noopener">Rua Canaã, 855 · Grajaú · BH</a></li>
+                    </ul>
+                    <h4 style="margin-top:1.5rem;">Responsabilidade técnica</h4>
+                    <ul>
+                        <li><a href="#">Karine Rolim, CRBio-4</a></li>
+                        <li><a href="#">ISO 20121</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 OCA Eventos Sustentáveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

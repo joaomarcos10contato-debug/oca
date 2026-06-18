@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto | OCA Eventos Sustentáveis</title>
+    <link rel="icon" type="image/svg+xml" href="identidade/favicon.svg">
+    <meta name="description" content="Conheça o impacto real da OCA: 85 eventos sustentáveis, 9.450 kg de resíduos desviados, 300 mulheres formadas e 30 empreendedoras parceiras. Responsabilidade técnica CRBio-4 e ISO 20121.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="impacto">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar" aria-label="Navegação principal">
+        <a href="index.html" class="navbar__logo">
+            <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+        </a>
+        <ul class="navbar__links" role="list">
+            <li><a href="sobre.html" data-nav="sobre">Sobre</a></li>
+            <li><a href="servicos.html" data-nav="servicos">Serviços</a></li>
+            <li><a href="impacto.html" data-nav="impacto">Impacto</a></li>
+            <li><a href="ods.html" data-nav="ods">ODS</a></li>
+            <li><a href="galeria.html" data-nav="galeria">Galeria</a></li>
+            <li><a href="parceiras.html" data-nav="parceiras">Parceiras</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--primary navbar__cta">Fale Conosco</a>
+        <button class="navbar__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <nav class="navbar__mobile" id="mobileMenu" aria-label="Menu mobile">
+        <a href="sobre.html" data-nav="sobre" onclick="closeMobile()">Sobre</a>
+        <a href="servicos.html" data-nav="servicos" onclick="closeMobile()">Serviços</a>
+        <a href="impacto.html" data-nav="impacto" onclick="closeMobile()">Impacto</a>
+        <a href="ods.html" data-nav="ods" onclick="closeMobile()">ODS</a>
+        <a href="galeria.html" data-nav="galeria" onclick="closeMobile()">Galeria</a>
+        <a href="parceiras.html" data-nav="parceiras" onclick="closeMobile()">Parceiras</a>
+        <a href="contato.html" class="btn btn--primary" onclick="closeMobile()">Fale Conosco</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero__inner">
+            <span class="page-hero__eyebrow">Resultados reais</span>
+            <h1 class="page-hero__title">Números que contam<br><em>nossa história</em></h1>
+            <p class="page-hero__subtitle">Cada evento OCA gera dados concretos de impacto social, ambiental e comunitário. Sustentabilidade não é promessa — é resultado mensurável.</p>
+        </div>
+    </div>
+
+    <!-- IMPACTO -->
+    <section id="impacto" aria-labelledby="impacto-titulo">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__eyebrow">Impacto real</span>
+                <h2 class="section__title" id="impacto-titulo">Números que contam a nossa história</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-box reveal">
+                    <span class="stat-box__number" data-target="85">85</span>
+                    <div class="stat-box__label">Eventos sustentáveis realizados</div>
+                </div>
+                <div class="stat-box reveal reveal-d1">
+                    <span class="stat-box__number" data-target="9450" data-suffix="kg">9.450 kg</span>
+                    <div class="stat-box__label">Resíduos desviados do aterro</div>
+                </div>
+                <div class="stat-box reveal reveal-d2">
+                    <span class="stat-box__number" data-target="300">300</span>
+                    <div class="stat-box__label">Mulheres formadas pelo OCA Florescer</div>
+                </div>
+                <div class="stat-box reveal reveal-d3">
+                    <span class="stat-box__number" data-target="30">30</span>
+                    <div class="stat-box__label">Mulheres empreendedoras na plataforma</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" aria-labelledby="dif-titulo">
+        <div class="container">
+            <div class="diferenciais__grid">
+                <div class="diferenciais__text reveal">
+                    <span class="section__eyebrow">Por que escolher a OCA</span>
+                    <h2 id="dif-titulo">Porque celebrar também transforma realidades.</h2>
+                    <p>Cada escolha que você faz ao planejar um evento tem impacto: no planeta, nas pessoas e na comunidade ao seu redor. A OCA garante que esse impacto seja positivo, mensurável e real.</p>
+                    <a href="contato.html" class="btn btn--primary">Fale com a OCA</a>
+                </div>
+                <div class="dif-list reveal reveal-d1">
+                    <div class="dif-item">
+                        <div class="dif-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>Responsabilidade técnica registrada</h4>
+                            <p>CRBio-4: única empresa de eventos com bióloga especialista em gestão ambiental como responsável técnica.</p>
+                        </div>
+                    </div>
+                    <div class="dif-item">
+                        <div class="dif-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>Alinhada à ISO 20121</h4>
+                            <p>Referência internacional em gestão sustentável de eventos aplicada em cada projeto, do planejamento à desmontagem.</p>
+                        </div>
+                    </div>
+                    <div class="dif-item">
+                        <div class="dif-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>Curadoria socioambiental rigorosa</h4>
+                            <p>Fornecedoras selecionadas por critérios de sustentabilidade, qualidade e alinhamento de valores, não apenas preço.</p>
+                        </div>
+                    </div>
+                    <div class="dif-item">
+                        <div class="dif-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>Gestão completa do início ao fim</h4>
+                            <p>Planejamento, produção, logística, acessibilidade, segurança e gestão de resíduos em um único parceiro.</p>
+                        </div>
+                    </div>
+                    <div class="dif-item">
+                        <div class="dif-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>Impacto social mensurável</h4>
+                            <p>Monitoramento com dados reais, não promessas. Resultados concretos que você pode compartilhar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="home-cta">
+        <div class="home-cta__inner reveal">
+            <h2>Gere impacto positivo no seu evento</h2>
+            <p>Entre em contato e saiba como a OCA pode criar resultados concretos para o seu projeto, empresa ou celebração.</p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                <a href="contato.html" class="btn btn--green" style="font-size:0.95rem; padding:0.85rem 2rem;">Falar com a OCA</a>
+                <a href="ods.html" class="btn btn--outline-white" style="font-size:0.95rem; padding:0.85rem 2rem;">Ver compromisso ODS</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
+                    </div>
+                    <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre a OCA</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="impacto.html">Impacto</a></li>
+                        <li><a href="ods.html">ODS</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="parceiras.html">Parceiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531998543261" target="_blank" rel="noopener">(31) 99854-3261</a></li>
+                        <li><a href="https://www.ocaeventos.com.br" target="_blank" rel="noopener">ocaeventos.com.br</a></li>
+                        <li><a href="https://instagram.com/ocaeventos" target="_blank" rel="noopener">@ocaeventos</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Cana%C3%A3%2C+855%2C+Graja%C3%BA%2C+Belo+Horizonte" target="_blank" rel="noopener">Rua Canaã, 855 · Grajaú · BH</a></li>
+                    </ul>
+                    <h4 style="margin-top:1.5rem;">Responsabilidade técnica</h4>
+                    <ul>
+                        <li><a href="#">Karine Rolim, CRBio-4</a></li>
+                        <li><a href="#">ISO 20121</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 OCA Eventos Sustentáveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
