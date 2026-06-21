@@ -2104,6 +2104,22 @@
 
             /* Word-cycle — previne overflow horizontal em palavras longas */
             .word-cycle { max-width: min(100%, calc(100vw - 2.5rem)); }
+
+            /* iOS Safari — previne auto-zoom ao focar em inputs (font-size < 16px dispara zoom) */
+            .contato__input,
+            .contato__select,
+            .contato__textarea { font-size: 16px; }
+
+            /* Touch targets — área mínima de 44px para interação por toque */
+            .partner-card__btn { min-height: 44px; display: inline-flex; align-items: center; }
+            .btn--white-rose,
+            .btn--outline-white-rose { min-height: 44px; }
+
+            /* Galeria modal — padding mais justo em mobile */
+            .galeria-modal { padding: 1rem; }
+
+            /* Lotus decorativo — menor no mobile (economia de render) */
+            #home::after { width: 240px; height: 240px; bottom: -1rem; right: -1rem; }
         }
 
         /* — CONTATO FORM (≤ 640px) — */
@@ -2160,6 +2176,11 @@
             /* Espaçamento seção header */
             .section__header { margin-bottom: 2rem; }
 
+            /* Florescer — stats menores para caber na tela */
+            .florescer-stat__number { font-size: 2rem; }
+            .florescer-stats-row { gap: 1.25rem; }
+            .florescer-stat__label { font-size: 0.72rem; max-width: 90px; }
+
             /* Seções */
             section { padding: 3.5rem 1.25rem; }
         }
@@ -2206,11 +2227,30 @@
             /* Hero h1 — fonte menor em telas de 320px para caber word-cycle */
             .hero__text h1 { font-size: 1.85rem; }
 
+            /* Florescer — stats ainda menores */
+            .florescer-stat__number { font-size: 1.75rem; }
+            .florescer-stats-row { gap: 1rem; }
+
             /* Espaçamento de cabeçalho ainda menor */
             .section__header { margin-bottom: 1.75rem; }
 
             /* Seções */
             section { padding: 3rem 1rem; }
+        }
+
+        /* — MOBILE MUITO PEQUENO (≤ 340px) — */
+        @media (max-width: 340px) {
+            /* Hero h1 — reduz para caber "responsabilidade." no word-cycle */
+            .hero__text h1 { font-size: 1.62rem; }
+            .hero__stat strong { font-size: 1.42rem; }
+            .hero__card { padding: 1.1rem 0.85rem; }
+
+            /* Florescer — stats compactos */
+            .florescer-stat__number { font-size: 1.55rem; }
+            .florescer-stats-row { gap: 0.75rem; }
+
+            /* Seções */
+            section { padding: 2.75rem 1rem; }
         }
 
         /* CONSULTORIA PRINCIPAL */
@@ -3413,12 +3453,14 @@
             const isOpen = mobileMenu.classList.toggle('open');
             burger.classList.toggle('active', isOpen);
             burger.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
         });
 
         function closeMobile() {
             mobileMenu.classList.remove('open');
             burger.classList.remove('active');
             burger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
         }
 
         document.addEventListener('click', (e) => {
