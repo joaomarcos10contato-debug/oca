@@ -198,7 +198,7 @@
         /* HERO */
         #home {
             min-height: 100vh;
-            background: #604747 url("identidade/fotos/karine.png") center top/cover no-repeat;
+            background: #604747 url("identidade/fundo site.png") center/cover no-repeat;
             display: flex;
             align-items: center;
             position: relative;
@@ -2213,6 +2213,100 @@
             /* Seções */
             section { padding: 3rem 1rem; }
         }
+
+        /* CONSULTORIA PRINCIPAL */
+        .consultoria-main {
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid rgba(201, 238, 150, 0.45);
+            border-left: 5px solid var(--green);
+            padding: 3rem 3.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .consultoria-main__tag {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--green-mid);
+            margin-bottom: 0.75rem;
+        }
+
+        .consultoria-main h3 {
+            font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+            font-weight: 700;
+            color: var(--brown);
+            margin-bottom: 1rem;
+            line-height: 1.25;
+        }
+
+        .consultoria-main__desc {
+            font-size: 0.97rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .consultoria-main__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .consultoria-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.85rem;
+            padding: 1.1rem 1.25rem;
+            background: var(--light-bg);
+            border-radius: 12px;
+            transition: box-shadow var(--transition);
+        }
+
+        .consultoria-item:hover { box-shadow: var(--shadow); }
+
+        .consultoria-item__icon {
+            width: 34px;
+            height: 34px;
+            background: var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .consultoria-item__icon svg {
+            width: 14px;
+            height: 14px;
+            stroke: var(--brown);
+            fill: none;
+        }
+
+        .consultoria-item h4 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--brown);
+            margin-bottom: 0.2rem;
+            line-height: 1.3;
+        }
+
+        .consultoria-item p {
+            font-size: 0.81rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        @media (max-width: 760px) {
+            .consultoria-main { padding: 2rem 1.5rem; }
+            .consultoria-main__items { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -2268,7 +2362,7 @@
                     </em>
                 </h1>
                 <p>A OCA transforma encontros em experiências significativas, conectando pessoas, conhecimento e propósito por meio da sustentabilidade, do impacto e da circularidade.</p>
-                <p class="hero__desde">Gestão e organização de eventos sustentáveis em Belo Horizonte, desde 2015.</p>
+                <p class="hero__desde">Consultoria especializada em eventos sustentáveis em Belo Horizonte, desde 2015.</p>
                 <div class="hero__buttons">
                     <a href="#servicos" class="btn btn--green">Nossos serviços</a>
                     <a href="#contato"  class="btn btn--outline-white">Fale Conosco</a>
@@ -2306,9 +2400,9 @@
                 <div class="sobre__text reveal">
                     <h2 id="sobre-titulo">OCA Eventos Sustentáveis</h2>
                     <span class="desde">Belo Horizonte, desde 2015</span>
-                    <p class="tagline">Um negócio de impacto que une organização de eventos sustentáveis, gestão de resíduos, formação profissional e empreendedorismo feminino.</p>
+                    <p class="tagline">Uma consultoria de impacto especializada em eventos sustentáveis, gestão de resíduos, formação profissional e empreendedorismo feminino.</p>
                     <p>A OCA surgiu de um desejo concreto: mudar a forma como os eventos acontecem. O setor gera muitos resíduos, emite CO2 em excesso e muitas vezes invisibiliza as mulheres que fazem tudo acontecer. A OCA veio para enfrentar esses desafios de frente.</p>
-                    <p>Acreditamos em um futuro onde eventos sustentáveis sejam a regra, não a exceção — com celebrações responsáveis que inspiram novos hábitos e valorizam quem faz.</p>
+                    <p>Acreditamos em um futuro onde eventos sustentáveis sejam a regra, não a exceção. Celebrações responsáveis que inspiram novos hábitos e valorizam quem faz.</p>
                     <p>Pertencimento, conexão real, valorização de quem faz, escolhas conscientes e cuidado com o meio ambiente. São mais do que valores. São a forma como a OCA opera todos os dias.</p>
                 </div>
                 <div class="sobre__right reveal reveal-d1">
@@ -2357,7 +2451,7 @@
                         </span>, a bióloga que reinventou a forma de celebrar.
                     </h2>
                     <p>Criada em Mariana, cidade histórica de Minas Gerais, Karine cresceu entre festas feitas à mão e celebrações de rua. Quando chegou a Belo Horizonte, sentiu falta exatamente disso: eventos com alma, feitos com cuidado, que respeitam as pessoas e o planeta.</p>
-                    <p>Foi dessa saudade que nasceu a OCA, em 2015. Bióloga com especialização em gestão ambiental e registro no CRBio-4, Karine uniu o rigor técnico ao afeto e criou uma empresa que organiza eventos como quem cuida de algo precioso.</p>
+                    <p>Foi dessa saudade que nasceu a OCA, em 2015. Bióloga com especialização em gestão ambiental e registro no CRBio-4, Karine criou uma consultoria que une o rigor técnico ao afeto, transformando a forma como eventos são planejados e realizados.</p>
                     <p>Hoje a OCA vai além dos eventos: forma mulheres empreendedoras pelo programa OCA Florescer, conecta produtoras locais com quem quer celebrar com propósito e comprova, um evento de cada vez, que sustentabilidade e beleza caminham juntas.</p>
                 </div>
                 <div class="karine__photo-wrap reveal reveal-d1">
@@ -2371,74 +2465,67 @@
     <section id="servicos" aria-labelledby="servicos-titulo">
         <div class="container">
             <div class="servicos__challenge reveal">
-                <h2 id="servicos-titulo">Qual é o desafio do seu evento hoje?</h2>
-                <p>Criar um evento memorável vai muito além da organização. É preciso pensar na experiência, nas escolhas envolvidas e na responsabilidade por tudo o que acontece antes, durante e depois.</p>
-                <p>Por isso, desenvolvemos soluções completas para eventos com propósito, unindo curadoria, criatividade, gestão de resíduos e responsabilidade socioambiental para transformar cada etapa em uma experiência mais consciente, afetiva e sustentável.</p>
-            </div>
-            <div class="cards-grid">
-                <div class="card reveal">
-                    <div class="card__img-wrap">
-                        <img class="card__img" src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.47.jpeg" alt="Evento sustentável organizado pela OCA" style="object-position: center 55%;">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                            </svg>
-                        </div>
-                        <h3>Organização de Eventos Sustentáveis</h3>
-                        <p>Organizamos eventos sociais, corporativos e culturais para até 100 pessoas com gestão 360°: da curadoria de fornecedoras à coordenação de produção, montagem, logística e gestão de resíduos. Cada detalhe planejado com afeto e propósito.</p>
-                        <a href="#contato" class="btn btn--primary">Solicitar proposta</a>
-                    </div>
-                </div>
-                <div class="card reveal reveal-d1">
-                    <div class="card__img-wrap" style="background:var(--light-bg);display:flex;align-items:center;justify-content:center;">
-                        <img src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.39 (1).jpeg" alt="Gestão de resíduos em evento sustentável" style="width:88%;height:88%;object-fit:cover;object-position:center 60%;">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="1 4 1 10 7 10"/>
-                                <polyline points="23 20 23 14 17 14"/>
-                                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
-                            </svg>
-                        </div>
-                        <h3>Gestão de Resíduos e PGRS</h3>
-                        <p>Elaboramos e executamos o Plano de Gerenciamento de Resíduos Sólidos para eventos de todos os portes, em conformidade com a Lei 12.305/2010. Responsabilidade técnica de Karine Rolim, bióloga registrada no CRBio-4.</p>
-                        <a href="#contato" class="btn btn--primary">Solicitar PGRS</a>
-                    </div>
-                </div>
-                <div class="card reveal reveal-d2">
-                    <div class="card__img-wrap">
-                        <img class="card__img" src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.43.jpeg" alt="Curadoria de fornecedoras e empreendedoras">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            </svg>
-                        </div>
-                        <h3>Curadoria com Propósito</h3>
-                        <p>Selecionamos produtos e serviços com criatividade, cuidado e responsabilidade. Toda parceira OCA passa por curadoria técnica e de valores alinhada à nossa missão socioambiental. Originalidade e compromisso com o que importa.</p>
-                        <a href="#parceiras" class="btn btn--primary">Conhecer parceiras</a>
-                    </div>
-                </div>
+                <h2 id="servicos-titulo">Seu evento pode ser mais do que bonito.</h2>
+                <p>Ele pode ser responsável, estratégico e genuinamente sustentável. A OCA oferece consultoria especializada para que eventos de todos os portes sejam planejados com gestão de resíduos, responsabilidade técnica e impacto socioambiental real.</p>
             </div>
 
-            <!-- OCA Florescer -->
+            <!-- Consultoria Principal -->
+            <div class="consultoria-main reveal">
+                <span class="consultoria-main__tag">Serviço principal</span>
+                <h3>Consultoria para Realização de Eventos Sustentáveis</h3>
+                <p class="consultoria-main__desc">A OCA atua como consultora estratégica para que seu evento aconteça com planejamento técnico, responsabilidade ambiental e escolhas conscientes em cada etapa. Do diagnóstico inicial ao acompanhamento no dia, orientamos o processo para garantir um evento com propósito real e impacto positivo.</p>
+                <div class="consultoria-main__items">
+                    <div class="consultoria-item">
+                        <div class="consultoria-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+                        </div>
+                        <div>
+                            <h4>PGRS — Gestão de Resíduos</h4>
+                            <p>Elaboração do Plano de Gerenciamento de Resíduos Sólidos para eventos de todos os portes, em conformidade com a Lei 12.305/2010. Responsabilidade técnica de bióloga registrada no CRBio-4.</p>
+                        </div>
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="consultoria-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Planejamento Estratégico</h4>
+                            <p>Diagnóstico e plano de ação para que o evento seja sustentável desde a concepção: fornecedores, materiais, logística e comunicação com critério socioambiental.</p>
+                        </div>
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="consultoria-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div>
+                            <h4>Curadoria de Parceiras</h4>
+                            <p>Indicação de fornecedoras curadas por valores, qualidade e alinhamento socioambiental. Uma rede de 30 mulheres empreendedoras à disposição do seu evento.</p>
+                        </div>
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="consultoria-item__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h4>Acompanhamento Técnico</h4>
+                            <p>Supervisão especializada durante o evento para garantir que as práticas sustentáveis planejadas sejam efetivamente aplicadas no dia.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contato" class="btn btn--primary">Solicitar consultoria</a>
+            </div>
+
+            <!-- OCA Florescer — Projeto Social -->
             <div class="florescer-featured reveal">
                 <div class="florescer-featured__text">
-                    <span class="florescer-featured__eyebrow">Programa Social</span>
+                    <span class="florescer-featured__eyebrow">Projeto Social</span>
                     <h3 class="florescer-featured__title">OCA Florescer</h3>
-                    <p class="florescer-featured__desc">Capacitamos mulheres para atuarem na cadeia produtiva de eventos, promovendo autonomia econômica, responsabilidade socioambiental e transformação social.</p>
-                    <p class="florescer-featured__desc">O programa é viabilizado por editais e parcerias com empresas comprometidas com transformação social.</p>
+                    <p class="florescer-featured__desc">Projeto social idealizado por Karine Rolim para capacitar mulheres na cadeia produtiva de eventos, promovendo autonomia econômica, responsabilidade socioambiental e transformação social.</p>
+                    <p class="florescer-featured__desc">Realizado por meio de editais e parcerias com empresas comprometidas com impacto social.</p>
                     <span class="florescer-featured__badge">
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         100% gratuito para as participantes
                     </span>
-                    <a href="#contato" class="btn btn--green" style="align-self: flex-start;">Quero participar</a>
                 </div>
                 <div class="florescer-featured__visual">
                     <p class="florescer-featured__quote">"Porque o futuro dos eventos<br>deve ser construído<br>por mulheres."</p>
@@ -3011,12 +3098,9 @@
                     <label for="f-servico">Qual serviço está buscando? <span class="contato__req">*</span></label>
                     <select id="f-servico" class="contato__select" required>
                         <option value="" disabled selected>Selecione uma opção</option>
-                        <option value="Organização de evento sustentável">Organização de evento sustentável</option>
-                        <option value="PGRS (Plano de Gerenciamento de Resíduos)">PGRS (Plano de Gerenciamento de Resíduos)</option>
-                        <option value="Curadoria de fornecedoras femininas">Curadoria de fornecedoras femininas</option>
+                        <option value="Consultoria para realização de eventos">Consultoria para realização de eventos</option>
                         <option value="Quero ser parceira">Quero ser parceira</option>
                         <option value="OCA Florescer (formação gratuita)">OCA Florescer (formação gratuita)</option>
-                        <option value="RICOTEC (cursos online)">RICOTEC (cursos online)</option>
                         <option value="Outro">Outro</option>
                     </select>
                 </div>
@@ -3041,7 +3125,7 @@
                     <div class="footer__brand-logo">
                         <img src="identidade/logo.png" alt="OCA Eventos Sustentáveis">
                     </div>
-                    <p>Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
+                    <p>Consultoria especializada em eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.</p>
                 </div>
                 <div class="footer__col">
                     <h4>Navegação</h4>
