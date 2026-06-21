@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCA Eventos Sustentáveis | Celebrar com Propósito</title>
+    <title>OCA | Consultoria em Eventos Sustentáveis e PGRS — Belo Horizonte</title>
     <link rel="icon" type="image/svg+xml" href="identidade/favicon.svg">
-    <meta name="description" content="A OCA Eventos Sustentáveis transforma encontros em experiências significativas, conectando pessoas, conhecimento e propósito com responsabilidade socioambiental. Desde 2015 em Belo Horizonte.">
+    <meta name="description" content="Consultoria especializada em eventos sustentáveis e PGRS em Belo Horizonte. Karine Rolim, bióloga CRBio-4, orienta seu evento com responsabilidade técnica e impacto socioambiental real. Desde 2015.">
     <meta property="og:title" content="OCA Eventos Sustentáveis">
-    <meta property="og:description" content="Gestão e organização de eventos sustentáveis, PGRS e empreendedorismo feminino. Desde 2015 por Karine Rolim, bióloga.">
+    <meta property="og:description" content="Consultoria técnica para eventos sustentáveis, elaboração de PGRS e curadoria de parceiras. Belo Horizonte, desde 2015.">
     <meta property="og:image" content="identidade/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1125,7 +1125,6 @@
         }
 
         /* PARCEIRAS */
-        #parceiras { background: var(--light-bg); }
 
         .parceiras__intro {
             text-align: center;
@@ -2325,6 +2324,91 @@
             .consultoria-main__items { grid-template-columns: 1fr; }
             .consultoria-main__visual { position: static; order: -1; }
         }
+
+        /* COMO FUNCIONA */
+        .como-funciona {
+            display: flex;
+            align-items: center;
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 238, 150, 0.35);
+        }
+
+        .como-funciona__step {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex: 1;
+        }
+
+        .como-funciona__num {
+            width: 32px;
+            height: 32px;
+            background: var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--brown);
+            flex-shrink: 0;
+        }
+
+        .como-funciona__text {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .como-funciona__text strong {
+            color: var(--brown);
+            display: block;
+            font-size: 0.88rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .como-funciona__arrow {
+            color: var(--green-mid);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            padding: 0 0.75rem;
+            opacity: 0.55;
+        }
+
+        /* FLOATING WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 990;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+
+        @media (max-width: 760px) {
+            .como-funciona { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .como-funciona__arrow { display: none; }
+            .whatsapp-float { bottom: 1.25rem; right: 1.25rem; width: 50px; height: 50px; }
+        }
     </style>
 </head>
 <body>
@@ -2379,7 +2463,7 @@
                         <span class="wc-word">transformação.</span>
                     </em>
                 </h1>
-                <p>A OCA transforma encontros em experiências significativas, conectando pessoas, conhecimento e propósito por meio da sustentabilidade, do impacto e da circularidade.</p>
+                <p>A OCA assessora eventos de todos os portes com planejamento técnico, gestão de resíduos (PGRS) e escolhas que reduzem o impacto ambiental sem comprometer a experiência.</p>
                 <p class="hero__desde">Consultoria especializada em eventos sustentáveis em Belo Horizonte, desde 2015.</p>
                 <div class="hero__buttons">
                     <a href="#servicos" class="btn btn--green">Nossos serviços</a>
@@ -2390,7 +2474,7 @@
                 <div class="hero__stats">
                     <div class="hero__stat">
                         <strong>85</strong>
-                        <span>Eventos realizados</span>
+                        <span>Eventos consultados</span>
                     </div>
                     <div class="hero__stat">
                         <strong>9.450 kg</strong>
@@ -2434,46 +2518,19 @@
                         <div class="pillar">
                             <div class="pillar__label">Pilar 01</div>
                             <h4>Impacto</h4>
-                            <p>Transformações que permanecem além do momento vivido: experiências com contribuições positivas e duradouras para pessoas e comunidades.</p>
+                            <p>Seu evento deixa uma marca positiva: resíduos bem gerenciados, fornecedoras valoradas, comunidade respeitada.</p>
                         </div>
                         <div class="pillar">
                             <div class="pillar__label">Pilar 02</div>
                             <h4>Comunidade</h4>
-                            <p>Equilíbrio entre presente e futuro, valorizando pessoas, relações e recursos por meio de escolhas conscientes.</p>
+                            <p>Eventos que envolvem e valorizam quem faz, quem celebra e o entorno. Uma cadeia de impacto que começa nas escolhas de fornecimento.</p>
                         </div>
                         <div class="pillar">
                             <div class="pillar__label">Pilar 03</div>
                             <h4>Circularidade</h4>
-                            <p>Recursos em ciclos contínuos: um modelo que valoriza o reaproveitamento e amplia o valor gerado por cada evento.</p>
+                            <p>Nenhum recurso é desperdiçado. Do planejamento ao desmonte, orientamos escolhas que reduzem sobras e reaproveitam o que sobrar.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- KARINE -->
-    <section id="karine" aria-labelledby="karine-titulo">
-        <div class="container">
-            <div class="karine__grid">
-                <div class="karine__text reveal">
-                    <span class="section__eyebrow">Quem faz acontecer</span>
-                    <h2 id="karine-titulo">
-                        <span class="karine-name">
-                            Karine Rolim
-                            <svg class="karine-name__underline" viewBox="0 0 300 20" aria-hidden="true">
-                                <path class="karine-name__path"
-                                    d="M 0,10 Q 75,0 150,10 Q 225,20 300,10"
-                                    stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                            </svg>
-                        </span>, a bióloga que reinventou a forma de celebrar.
-                    </h2>
-                    <p>Criada em Mariana, cidade histórica de Minas Gerais, Karine cresceu entre festas feitas à mão e celebrações de rua. Quando chegou a Belo Horizonte, sentiu falta exatamente disso: eventos com alma, feitos com cuidado, que respeitam as pessoas e o planeta.</p>
-                    <p>Foi dessa saudade que nasceu a OCA, em 2015. Bióloga com especialização em gestão ambiental e registro no CRBio-4, Karine criou uma consultoria que une o rigor técnico ao afeto, transformando a forma como eventos são planejados e realizados.</p>
-                    <p>Hoje a OCA vai além dos eventos: forma mulheres empreendedoras pelo programa OCA Florescer, conecta produtoras locais com quem quer celebrar com propósito e comprova, um evento de cada vez, que sustentabilidade e beleza caminham juntas.</p>
-                </div>
-                <div class="karine__photo-wrap reveal reveal-d1">
-                    <img src="identidade/fotos/karine.png" alt="Karine Rolim, fundadora e responsável técnica da OCA Eventos Sustentáveis">
                 </div>
             </div>
         </div>
@@ -2485,6 +2542,7 @@
             <div class="servicos__challenge reveal">
                 <h2 id="servicos-titulo">Seu evento pode ser mais do que bonito.</h2>
                 <p>Ele pode ser responsável, estratégico e genuinamente sustentável. A OCA oferece consultoria especializada para que eventos de todos os portes sejam planejados com gestão de resíduos, responsabilidade técnica e impacto socioambiental real.</p>
+                <p>Eventos geram grandes volumes de resíduos. Sem planejamento técnico, esse custo fica invisível até o fim. A OCA torna a sustentabilidade parte do planejamento — não um acréscimo no orçamento.</p>
             </div>
 
             <!-- Consultoria Principal -->
@@ -2492,7 +2550,7 @@
                 <div class="consultoria-main__content">
                     <span class="consultoria-main__tag">Serviço principal</span>
                     <h3>Consultoria para Realização de Eventos Sustentáveis</h3>
-                    <p class="consultoria-main__desc">A OCA atua como consultora estratégica para que seu evento aconteça com planejamento técnico, responsabilidade ambiental e escolhas conscientes em cada etapa. Do diagnóstico inicial ao acompanhamento no dia, orientamos o processo para garantir um evento com propósito real e impacto positivo.</p>
+                    <p class="consultoria-main__desc">A OCA atua como consultora estratégica para que seu evento aconteça com planejamento técnico, responsabilidade ambiental e escolhas conscientes em cada etapa. Do diagnóstico inicial ao acompanhamento no dia, orientamos o processo para garantir um evento com propósito real e impacto positivo. Atende empresas que precisam de PGRS para eventos corporativos, produtores que querem certificar a sustentabilidade do projeto e pessoas que querem celebrar com responsabilidade sem abrir mão da beleza.</p>
                     <div class="consultoria-main__items">
                         <div class="consultoria-item">
                             <div class="consultoria-item__icon" aria-hidden="true">
@@ -2500,7 +2558,7 @@
                             </div>
                             <div>
                                 <h4>PGRS — Gestão de Resíduos</h4>
-                                <p>Elaboração do Plano de Gerenciamento de Resíduos Sólidos para eventos de todos os portes, em conformidade com a Lei 12.305/2010. Responsabilidade técnica de bióloga registrada no CRBio-4.</p>
+                                <p>O PGRS é o documento técnico que define como os resíduos do seu evento serão coletados, separados e destinados corretamente. Exigido por lei em eventos de maior porte e fundamental para qualquer evento com comprometimento ambiental real. Responsabilidade técnica de bióloga registrada no CRBio-4.</p>
                             </div>
                         </div>
                         <div class="consultoria-item">
@@ -2532,12 +2590,67 @@
                         </div>
                     </div>
                     <a href="#contato" class="btn btn--primary">Solicitar consultoria</a>
+                    <div class="como-funciona">
+                        <div class="como-funciona__step">
+                            <div class="como-funciona__num">1</div>
+                            <div class="como-funciona__text">
+                                <strong>Diagnóstico inicial</strong>
+                                Conversa gratuita sobre o seu evento
+                            </div>
+                        </div>
+                        <span class="como-funciona__arrow">→</span>
+                        <div class="como-funciona__step">
+                            <div class="como-funciona__num">2</div>
+                            <div class="como-funciona__text">
+                                <strong>Plano personalizado</strong>
+                                Estratégia sob medida para o seu contexto
+                            </div>
+                        </div>
+                        <span class="como-funciona__arrow">→</span>
+                        <div class="como-funciona__step">
+                            <div class="como-funciona__num">3</div>
+                            <div class="como-funciona__text">
+                                <strong>Acompanhamento técnico</strong>
+                                Do planejamento ao dia do evento
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="consultoria-main__visual">
                     <img src="identidade/imagem pgrs.png" alt="Gestão de Resíduos em Eventos — PGRS OCA">
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- KARINE -->
+    <section id="karine" aria-labelledby="karine-titulo">
+        <div class="container">
+            <div class="karine__grid">
+                <div class="karine__text reveal">
+                    <span class="section__eyebrow">Quem faz acontecer</span>
+                    <h2 id="karine-titulo">
+                        <span class="karine-name">
+                            Karine Rolim
+                            <svg class="karine-name__underline" viewBox="0 0 300 20" aria-hidden="true">
+                                <path class="karine-name__path"
+                                    d="M 0,10 Q 75,0 150,10 Q 225,20 300,10"
+                                    stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            </svg>
+                        </span>, a bióloga que transformou a sustentabilidade em estratégia para eventos.
+                    </h2>
+                    <p>Criada em Mariana, cidade histórica de Minas Gerais, Karine cresceu entre festas feitas à mão e celebrações de rua. Quando chegou a Belo Horizonte, sentiu falta exatamente disso: eventos com alma, feitos com cuidado, que respeitam as pessoas e o planeta.</p>
+                    <p>Foi dessa saudade que nasceu a OCA, em 2015. Bióloga com especialização em gestão ambiental e registro no CRBio-4, Karine criou uma consultoria que une o rigor técnico ao afeto, transformando a forma como eventos são planejados e realizados.</p>
+                    <p>Hoje a OCA vai além da consultoria: forma mulheres empreendedoras pelo programa OCA Florescer, conecta produtoras locais com quem quer celebrar com propósito e comprova, um evento de cada vez, que sustentabilidade e beleza caminham juntas.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="#contato" class="btn btn--primary">Solicitar consultoria</a>
+                    </div>
+                </div>
+                <div class="karine__photo-wrap reveal reveal-d1">
+                    <img src="identidade/fotos/karine.png" alt="Karine Rolim, fundadora e responsável técnica da OCA Eventos Sustentáveis">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -2585,8 +2698,8 @@
                             <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                         </div>
                         <div>
-                            <h4>Gestão completa do início ao fim</h4>
-                            <p>Planejamento, produção, logística, acessibilidade, segurança e gestão de resíduos em um único parceiro.</p>
+                            <h4>Acompanhamento completo do planejamento ao dia do evento</h4>
+                            <p>Diagnóstico, plano de ação, curadoria de fornecedoras e supervisão técnica no dia, em um único ponto de contato.</p>
                         </div>
                     </div>
                     <div class="dif-item">
@@ -2613,7 +2726,7 @@
             <div class="stats-grid">
                 <div class="stat-box reveal">
                     <span class="stat-box__number" data-target="85">85</span>
-                    <div class="stat-box__label">Eventos sustentáveis realizados</div>
+                    <div class="stat-box__label">Eventos sustentáveis consultados</div>
                 </div>
                 <div class="stat-box reveal reveal-d1">
                     <span class="stat-box__number" data-target="9450" data-suffix="kg">9.450 kg</span>
@@ -2637,7 +2750,7 @@
             <div class="section__header reveal">
                 <span class="section__eyebrow">Agenda 2030</span>
                 <h2 class="section__title" id="ods-titulo">Nosso compromisso com os ODS</h2>
-                <p class="section__subtitle">Cada evento realizado pela OCA contribui diretamente para os Objetivos de Desenvolvimento Sustentável da ONU.</p>
+                <p class="section__subtitle">Cada evento assessorado pela OCA contribui diretamente para os Objetivos de Desenvolvimento Sustentável da ONU.</p>
             </div>
             <div class="ods-grid">
                 <div class="ods-card reveal">
@@ -2646,7 +2759,7 @@
                     </div>
                     <div class="ods-body">
                         <h4>Cidades e Comunidades Sustentáveis</h4>
-                        <p>Promovemos eventos que fortalecem a cultura local, a conexão entre comunidades e o uso consciente dos espaços urbanos, contribuindo para cidades mais humanas e sustentáveis.</p>
+                        <p>Orientamos eventos que fortalecem a cultura local, a conexão entre comunidades e o uso consciente dos espaços urbanos, contribuindo para cidades mais humanas e sustentáveis.</p>
                     </div>
                 </div>
                 <div class="ods-card reveal reveal-d1">
@@ -2655,7 +2768,7 @@
                     </div>
                     <div class="ods-body">
                         <h4>Consumo e Produção Responsáveis</h4>
-                        <p>Cada evento é planejado com curadoria de fornecedoras, gestão de resíduos e práticas que reduzem o desperdício, transformando celebrações em modelos de consumo consciente.</p>
+                        <p>Cada evento assessorado é planejado com curadoria de fornecedoras, gestão de resíduos e práticas que reduzem o desperdício, transformando celebrações em modelos de consumo consciente.</p>
                     </div>
                 </div>
                 <div class="ods-card reveal reveal-d2">
@@ -2664,7 +2777,7 @@
                     </div>
                     <div class="ods-body">
                         <h4>Ação Contra a Mudança Global do Clima</h4>
-                        <p>Implementamos estratégias de redução de emissões e ações de educação climática que envolvem público, equipe e comunidade em cada evento realizado.</p>
+                        <p>Orientamos estratégias de redução de emissões e ações de educação climática que envolvem público, equipe e comunidade em cada evento assessorado.</p>
                     </div>
                 </div>
                 <div class="ods-card reveal reveal-d3">
@@ -2727,22 +2840,22 @@
             </div>
             <div class="galeria-preview reveal">
                 <div class="galeria-preview__item" onclick="openGaleria()">
-                    <img src="identidade/fotos/1-1-300x300.png" alt="Evento OCA">
+                    <img src="identidade/fotos/1-1-300x300.png" alt="Evento sustentável assessorado pela OCA — Belo Horizonte" loading="lazy">
                 </div>
                 <div class="galeria-preview__item" onclick="openGaleria()">
-                    <img src="identidade/fotos/2-1-300x300.png" alt="Evento OCA">
+                    <img src="identidade/fotos/2-1-300x300.png" alt="Consultoria em eventos sustentáveis OCA" loading="lazy">
                 </div>
                 <div class="galeria-preview__item" onclick="openGaleria()">
-                    <img src="identidade/fotos/3-1-300x300.png" alt="Evento OCA">
+                    <img src="identidade/fotos/3-1-300x300.png" alt="Gestão de resíduos em evento — OCA Karine Rolim" loading="lazy">
                 </div>
                 <div class="galeria-preview__item" onclick="openGaleria()">
-                    <img src="identidade/fotos/4-1-300x300.png" alt="Evento OCA">
+                    <img src="identidade/fotos/4-1-300x300.png" alt="Evento sustentável com consultoria OCA — BH" loading="lazy">
                 </div>
                 <div class="galeria-preview__item" onclick="openGaleria()">
-                    <img src="identidade/fotos/5-1-300x300.png" alt="Evento OCA">
+                    <img src="identidade/fotos/5-1-300x300.png" alt="Consultoria PGRS para eventos — OCA" loading="lazy">
                 </div>
                 <div class="galeria-preview__item galeria-preview__item--more" onclick="openGaleria()">
-                    <img src="identidade/fotos/6-1-300x300.png" alt="Evento OCA">
+                    <img src="identidade/fotos/6-1-300x300.png" alt="Eventos sustentáveis OCA Belo Horizonte" loading="lazy">
                     <div class="galeria-more-overlay">
                         <strong>+25</strong>
                         <span>Ver mais fotos</span>
@@ -2763,38 +2876,7 @@
             <h3>Galeria de eventos <span>OCA</span></h3>
             <button class="galeria-modal__close" onclick="closeGaleria()" aria-label="Fechar galeria">&#x2715;</button>
         </div>
-        <div class="galeria-modal__grid">
-            <img src="identidade/fotos/WhatsApp-Image-2024-07-08-at-11.24.03-1152x1536.jpeg" alt="Evento OCA">
-            <img src="identidade/fotos/1-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/2-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/3-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/4-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/5-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/6-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/7-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/8-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.39 (1).jpeg" alt="Evento OCA">
-            <img src="identidade/fotos/9-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/10-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/11-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/12-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/13-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/14-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/15-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/16-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/17-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/18-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/19-1-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/20-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/21-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/22-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/23-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/24-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/25-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/26-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/27-300x300.png" alt="Evento OCA">
-            <img src="identidade/fotos/28-300x300.png" alt="Evento OCA">
-        </div>
+        <div class="galeria-modal__grid" id="galeriaGrid"></div>
     </div>
 
     <!-- PARCEIRAS / REDE DE MULHERES -->
@@ -2817,7 +2899,7 @@
                     </div>
                     <div class="rede-hero__actions">
                         <button onclick="openParceiras()" class="btn btn--white-rose">Ver toda a rede</button>
-                        <a href="https://wa.me/5531998543261?text=Ol%C3%A1%20Karine!%20Tenho%20interesse%20em%20me%20tornar%20parceira%20da%20OCA%20Eventos%20Sustent%C3%A1veis." target="_blank" rel="noopener noreferrer" class="btn btn--outline-white-rose">Quero ser parceira</a>
+                        <a href="https://wa.me/5531998543261?text=Ol%C3%A1%20Karine!%20Tenho%20interesse%20em%20me%20tornar%20parceira%20da%20OCA%20Eventos%20Sustent%C3%A1veis." target="_blank" rel="noopener noreferrer" class="btn btn--outline-white-rose" style="font-size:0.8rem; opacity:0.78; border-width:1px;">Quero ser parceira</a>
                     </div>
                 </div>
             </div>
@@ -3119,6 +3201,22 @@
                         <input type="tel" id="f-tel" class="contato__input" placeholder="(00) 00000-0000" required>
                     </div>
                 </div>
+                <div class="contato__grid-2">
+                    <div class="contato__field">
+                        <label for="f-data">Data aproximada do evento</label>
+                        <input type="text" id="f-data" class="contato__input" placeholder="Ex: setembro de 2026">
+                    </div>
+                    <div class="contato__field">
+                        <label for="f-porte">Número estimado de convidados</label>
+                        <select id="f-porte" class="contato__select">
+                            <option value="" disabled selected>Selecione uma faixa</option>
+                            <option value="Até 50 convidados">Até 50 convidados</option>
+                            <option value="50 a 200 convidados">50 a 200 convidados</option>
+                            <option value="200 a 500 convidados">200 a 500 convidados</option>
+                            <option value="Acima de 500 convidados">Acima de 500 convidados</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="contato__field">
                     <label for="f-servico">Qual serviço está buscando? <span class="contato__req">*</span></label>
                     <select id="f-servico" class="contato__select" required>
@@ -3141,6 +3239,16 @@
             </form>
         </div>
     </section>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/5531998543261?text=Ol%C3%A1%2C+Karine!+Gostaria+de+saber+mais+sobre+a+consultoria+da+OCA."
+       target="_blank" rel="noopener noreferrer"
+       class="whatsapp-float"
+       aria-label="Fale pelo WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+        </svg>
+    </a>
 
     <!-- FOOTER -->
     <footer>
@@ -3184,7 +3292,50 @@
     </footer>
 
     <script>
+        const galeriaImagens = [
+            ['identidade/fotos/WhatsApp-Image-2024-07-08-at-11.24.03-1152x1536.jpeg', 'Evento sustentável OCA — Belo Horizonte'],
+            ['identidade/fotos/1-1-300x300.png', 'Consultoria em eventos sustentáveis OCA'],
+            ['identidade/fotos/2-1-300x300.png', 'Evento com gestão de resíduos — OCA BH'],
+            ['identidade/fotos/3-1-300x300.png', 'Evento sustentável assessorado pela OCA'],
+            ['identidade/fotos/4-1-300x300.png', 'Consultoria PGRS em evento — OCA'],
+            ['identidade/fotos/5-1-300x300.png', 'Evento sustentável com curadoria OCA'],
+            ['identidade/fotos/6-1-300x300.png', 'Evento com impacto socioambiental — OCA'],
+            ['identidade/fotos/7-1-300x300.png', 'Gestão sustentável de eventos — OCA BH'],
+            ['identidade/fotos/8-1-300x300.png', 'Evento sustentável OCA — Karine Rolim'],
+            ['identidade/fotos/WhatsApp Image 2026-06-08 at 11.35.39 (1).jpeg', 'Evento assessorado pela OCA Eventos Sustentáveis'],
+            ['identidade/fotos/9-1-300x300.png', 'Consultoria em eventos sustentáveis — OCA'],
+            ['identidade/fotos/10-1-300x300.png', 'Evento com responsabilidade ambiental — OCA'],
+            ['identidade/fotos/11-1-300x300.png', 'Evento sustentável em Belo Horizonte — OCA'],
+            ['identidade/fotos/12-1-300x300.png', 'PGRS em evento — OCA Karine Rolim'],
+            ['identidade/fotos/13-1-300x300.png', 'Consultoria OCA para eventos sustentáveis'],
+            ['identidade/fotos/14-1-300x300.png', 'Evento com curadoria socioambiental — OCA'],
+            ['identidade/fotos/15-1-300x300.png', 'Evento sustentável assessorado pela OCA'],
+            ['identidade/fotos/16-1-300x300.png', 'Gestão de resíduos em eventos — OCA BH'],
+            ['identidade/fotos/17-1-300x300.png', 'Consultoria sustentável para eventos — OCA'],
+            ['identidade/fotos/18-300x300.png', 'Evento com impacto positivo — OCA BH'],
+            ['identidade/fotos/19-1-300x300.png', 'Evento sustentável Belo Horizonte — OCA'],
+            ['identidade/fotos/20-300x300.png', 'Consultoria PGRS e eventos — OCA Karine'],
+            ['identidade/fotos/21-300x300.png', 'Evento assessorado pela OCA Sustentável'],
+            ['identidade/fotos/22-300x300.png', 'Gestão ambiental em eventos — OCA BH'],
+            ['identidade/fotos/23-300x300.png', 'Evento sustentável com OCA — Belo Horizonte'],
+            ['identidade/fotos/24-300x300.png', 'Consultoria eventos sustentáveis — OCA'],
+            ['identidade/fotos/25-300x300.png', 'Evento responsável — OCA Karine Rolim'],
+            ['identidade/fotos/26-300x300.png', 'Evento com gestão de resíduos — OCA BH'],
+            ['identidade/fotos/27-300x300.png', 'Consultoria sustentável OCA — BH'],
+            ['identidade/fotos/28-300x300.png', 'Evento com propósito e impacto — OCA'],
+        ];
+
         function openGaleria() {
+            const grid = document.getElementById('galeriaGrid');
+            if (!grid.children.length) {
+                galeriaImagens.forEach(([src, alt]) => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = alt;
+                    img.loading = 'lazy';
+                    grid.appendChild(img);
+                });
+            }
             document.getElementById('galeriaModal').classList.add('open');
             document.body.style.overflow = 'hidden';
         }
@@ -3232,6 +3383,8 @@
             const email   = document.getElementById('f-email').value.trim();
             const tel     = document.getElementById('f-tel').value.trim();
             const servico = document.getElementById('f-servico').value;
+            const data    = document.getElementById('f-data').value.trim();
+            const porte   = document.getElementById('f-porte').value;
             const msg     = document.getElementById('f-msg').value.trim();
             const privacy = document.getElementById('f-privacy').checked;
 
@@ -3240,9 +3393,13 @@
             let texto = `Olá, Karine! Meu nome é *${nome}*`;
             if (empresa) texto += ` da empresa *${empresa}*`;
             texto += `.\n\n📧 E-mail: ${email}\n📞 Telefone: ${tel}\n🌿 Serviço: ${servico}`;
-            if (msg) texto += `\n\n💬 Mensagem: ${msg}`;
+            if (data)  texto += `\n📅 Data do evento: ${data}`;
+            if (porte) texto += `\n👥 Convidados: ${porte}`;
+            if (msg)   texto += `\n\n💬 Mensagem: ${msg}`;
 
             window.open('https://wa.me/5531998543261?text=' + encodeURIComponent(texto), '_blank');
+
+            e.target.innerHTML = '<div style="text-align:center; padding: 2rem 1rem;"><p style="font-size:1.1rem; font-weight:700; color:var(--green); margin-bottom:0.75rem;">Mensagem enviada!</p><p style="color:rgba(255,255,255,0.75); font-size:0.93rem; line-height:1.65;">Em instantes você será redirecionado para o WhatsApp.<br>Se não abriu automaticamente, <a href="https://wa.me/5531998543261" target="_blank" rel="noopener" style="color:var(--green); text-decoration:underline;">clique aqui para acessar diretamente</a>.</p></div>';
         }
 
         const navbar = document.getElementById('navbar');
