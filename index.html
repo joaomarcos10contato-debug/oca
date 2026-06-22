@@ -175,7 +175,7 @@
         .navbar__mobile {
             display: none;
             position: fixed;
-            top: 70px; left: 0; right: 0;
+            top: 82px; left: 0; right: 0;
             background: var(--white);
             padding: 1.5rem 2rem 2rem;
             box-shadow: 0 8px 30px rgba(0,0,0,0.1);
@@ -436,6 +436,10 @@
             border-radius: var(--radius);
             overflow: hidden;
             aspect-ratio: 2 / 1;
+        }
+
+        @media (max-width: 768px) {
+            .sobre__mosaic { aspect-ratio: 4 / 3; }
         }
 
         .sobre__mosaic img {
@@ -1458,8 +1462,8 @@
             background: rgba(96,71,71,0.88);
             color: var(--white);
             border: none;
-            width: 34px;
-            height: 34px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             font-size: 1rem;
             cursor: pointer;
@@ -1932,8 +1936,8 @@
         }
 
         .galeria-modal__close {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             background: rgba(255,255,255,0.1);
             border: none;
@@ -2085,8 +2089,6 @@
         @media (max-width: 480px) {
             /* Hero */
             .hero__inner { padding: 6rem 1.25rem 3rem; }
-            .hero__card { padding: 1.5rem 1.25rem; }
-            .hero__tagline { font-size: 0.75rem; }
             .hero__buttons { flex-direction: column; gap: 0.75rem; }
             .hero__buttons .btn { width: 100%; justify-content: center; text-align: center; }
 
@@ -2142,10 +2144,7 @@
             .navbar.scrolled { padding: 0.65rem 1rem; }
 
             /* Hero */
-            .hero__inner { padding: 5.5rem 1rem 2.5rem; gap: 1.75rem; }
-            .hero__stat strong { font-size: 1.6rem; }
-            .hero__stat span { font-size: 0.68rem; }
-            .hero__card { padding: 1.25rem 1rem; }
+            .hero__inner { padding: 5.5rem 1rem 2.5rem; }
 
             /* Serviços */
             .servicos__challenge { padding: 1.75rem 1rem; }
@@ -2192,8 +2191,6 @@
         @media (max-width: 340px) {
             /* Hero h1 — reduz para caber "responsabilidade." no word-cycle */
             .hero__text h1 { font-size: 1.62rem; }
-            .hero__stat strong { font-size: 1.42rem; }
-            .hero__card { padding: 1.1rem 0.85rem; }
 
             /* Florescer — stats compactos */
             .florescer-stat__number { font-size: 1.55rem; }
