@@ -230,13 +230,12 @@
         .hero__inner {
             position: relative;
             z-index: 2;
-            max-width: 1200px;
+            max-width: 860px;
             margin: 0 auto;
             padding: 9rem 3rem 5rem;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 5rem;
-            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             width: 100%;
         }
 
@@ -276,20 +275,6 @@
             flex-wrap: wrap;
         }
 
-        .hero__visual {
-            border-radius: 1.25rem;
-            overflow: hidden;
-            align-self: stretch;
-            min-height: 420px;
-        }
-
-        .hero__visual img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center top;
-            display: block;
-        }
 
         /* HERO — animação de entrada */
         @keyframes wordReveal {
@@ -311,7 +296,6 @@
         .hero__text > p:nth-of-type(1) { animation-delay: 1.1s; }
         .hero__text > p:nth-of-type(2) { animation-delay: 1.22s; }
         .hero__buttons       { animation: heroFadeUp 0.6s ease both; animation-delay: 1.38s; }
-        .hero__visual        { animation: heroFadeUp 0.7s ease both; animation-delay: 0.45s; }
 
         /* Word cycle */
         .word-cycle {
@@ -346,7 +330,7 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .hw, .hero__text > p, .hero__buttons, .hero__visual {
+            .hw, .hero__text > p, .hero__buttons {
                 animation: none; opacity: 1; filter: none; transform: none;
             }
             .wc-word { transition: none; }
@@ -2019,14 +2003,8 @@
 
             /* Hero */
             .hero__inner {
-                grid-template-columns: 1fr;
                 padding: 7rem 1.25rem 3.5rem;
-                gap: 2rem;
             }
-            .hero__visual { display: none; }
-            .hero__stats { grid-template-columns: 1fr 1fr; gap: 1.25rem 1rem; }
-            .hero__stat strong { font-size: 1.85rem; }
-            .hero__stat span { font-size: 0.76rem; }
 
             /* Seções em 1 coluna */
             .sobre__grid,
@@ -2481,11 +2459,6 @@
                     <a href="#servicos" class="btn btn--green">Nossos serviços</a>
                     <a href="#contato"  class="btn btn--outline-white">Fale Conosco</a>
                 </div>
-            </div>
-            <div class="hero__visual">
-                <img src="identidade/fotos/WhatsApp-Image-2024-07-08-at-11.24.03-1152x1536.jpeg"
-                     alt="Evento assessorado pela OCA Eventos Sustentáveis — Belo Horizonte"
-                     loading="eager">
             </div>
         </div>
     </section>
